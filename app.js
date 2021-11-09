@@ -1,7 +1,7 @@
 //map initialization
 const map = L.map("map", {
-  center: [51.019647, 16.776968],
-  zoom: 12,
+  center: [51.037081, 16.546543],
+  zoom: 11,
   maxZoom: 18,
 });
 // add the OpenStreetMap tiles layer
@@ -9,17 +9,18 @@ const osm = L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
   attribution:
     '&copy; <a href="https://openstreetmap.org/copyright">OpenStreetMap contributors</a>',
 });
-osm.addTo(map);
 
 // add OSM hike bike layer
-const hikeBike = L.tileLayer(
-  "https://tiles.wmflabs.org/hikebike/{z}/{x}/{y}.png",
+const mapBox = L.tileLayer(
+  "https://api.mapbox.com/styles/v1/jmajek/ckvm61hjo1in914mwf45thlt7/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1Ijoiam1hamVrIiwiYSI6ImNrdm01cWc4MTBlODkycXFmdzk4MzdrenQifQ.rh-ADjtPd9DIGdTAwf124A",
   {
     attribution:
-      '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+      'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+    tileSize: 512,
+    zoomOffset: -1,
   }
 );
-
+mapBox.addTo(map);
 // show the scale bar on the lower left corner
 L.control.scale({ imperial: false, metric: true }).addTo(map);
 
@@ -44,7 +45,14 @@ const pMonument = markerPoint(
   "style/markers/landmark_marker.svg"
 );
 const pView = markerPoint(pointsView, "style/markers/camera_marker.svg");
-const pBorder = L.geoJSON(parkBorder);
+const pBorder = L.geoJSON(parkBorder, {
+  style: {
+    color: "#118600",
+    weight: 3,
+  },
+});
+const pBeaver = L.geoJSON(beaverTrail);
+const pBielik = L.geoJSON(bieliksTrail);
 pInfo.addTo(map);
 pMonument.addTo(map);
 pView.addTo(map);
@@ -52,8 +60,8 @@ pBorder.addTo(map);
 
 // map background layers used in layer controller
 const mapLayers = {
-  "Basic OpenStreetMap": osm,
-  "Hike and Bike OpenStreetMap": hikeBike,
+  "MapBox Basic": mapBox,
+  OpenStreetMap: osm,
 };
 
 // object witch marker points and lines used in layer controller
@@ -62,6 +70,8 @@ const mapMarkers = {
   "Tablice Informacyjne": pInfo,
   Zabytki: pMonument,
   "Punkty widokowe": pView,
+  "Szlak Bobra": pBeaver,
+  "Szlak Bielika": pBielik,
 };
 
 // layer controller
