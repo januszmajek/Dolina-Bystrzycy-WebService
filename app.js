@@ -1,16 +1,18 @@
 //map initialization
 const map = L.map("map", {
-  center: [51.037081, 16.546543],
+  center: [51.03085, 16.778501],
   zoom: 11,
+  minZoom: 10,
   maxZoom: 18,
 });
-// add the OpenStreetMap tiles layer
+
+// OpenStreetMap layer
 const osm = L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
   attribution:
-    '&copy; <a href="https://openstreetmap.org/copyright">OpenStreetMap contributors</a>',
+    '&copy; <a href="https://openstreetmap.org/copyright">OpenStreetMap</a> contributors',
 });
 
-// add OSM hike bike layer
+// MapBox Basic layer
 const mapBox = L.tileLayer(
   "https://api.mapbox.com/styles/v1/jmajek/ckvm61hjo1in914mwf45thlt7/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1Ijoiam1hamVrIiwiYSI6ImNrdm01cWc4MTBlODkycXFmdzk4MzdrenQifQ.rh-ADjtPd9DIGdTAwf124A",
   {
@@ -21,9 +23,11 @@ const mapBox = L.tileLayer(
   }
 );
 mapBox.addTo(map);
-// show the scale bar on the lower left corner
+
+// show the scale bar on the lower left corner of the map
 L.control.scale({ imperial: false, metric: true }).addTo(map);
 
+// function that define marker icon properities, takes icon image by url and assign it to chosen data
 function markerPoint(layerData, urlIcon) {
   const customIcon = new L.Icon({
     iconUrl: urlIcon,
@@ -74,8 +78,11 @@ const mapMarkers = {
   "Szlak Bielika": pBielik,
 };
 
-// layer controller
+// add layer controller to the map
 L.control.layers(mapLayers, mapMarkers).addTo(map);
+
+// show zoom controller on higher right corner of the map
+map.zoomControl.setPosition("topright");
 
 /* ----------------UNUSED CODE---------------- */
 /* --------------MAYBE USE LATER-------------- */

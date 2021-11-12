@@ -1,8 +1,59 @@
-#map {
-  height: 100vh;
-  width: 100%;
-}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
 body {
-  padding: 0%;
   margin: 0%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 400px auto;
+  grid-template-rows: 64px auto;
+  grid-template-areas:
+    "hd hd"
+    "sidebar main";
+}
+#navbar {
+  grid-area: hd;
+  z-index: 1;
+  background: #ffffff;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 5px 17px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+}
+#navbar h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  margin: 9px auto 9px 15px;
+  cursor: pointer;
+}
+#navbar .btn {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  margin: 11px;
+  padding: 9px 25px;
+  background-color: #ffffff;
+  border-style: solid;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+#navbar .btn:hover {
+  background-color: #2db46d;
+}
+#left-bar {
+  grid-area: sidebar;
+  z-index: 0;
+  background: orange;
+}
+/* testowy searchbar */
+#left-bar input[type="text"] {
+  width: auto;
+  padding: 12px;
+  margin: 3vh 3vh auto 3vh;
+  border: none;
+  font-size: 17px;
+}
+#map {
+  z-index: 0;
+  grid-area: main;
 }
