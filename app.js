@@ -27,7 +27,7 @@ mapBox.addTo(map);
 // show the scale bar on the lower left corner of the map
 L.control.scale({ imperial: false, metric: true }).addTo(map);
 
-// function that define marker icon properities, takes icon image by url and assign it to chosen data
+// function define marker icon properities, takes icon image by url and assign it to chosen data
 function markerPoint(layerData, urlIcon) {
   const customIcon = new L.Icon({
     iconUrl: urlIcon,
@@ -84,61 +84,104 @@ L.control.layers(mapLayers, mapMarkers).addTo(map);
 // show zoom controller on higher right corner of the map
 map.zoomControl.setPosition("topright");
 
-/* ----------------UNUSED CODE---------------- */
-/* --------------MAYBE USE LATER-------------- */
+const infoNames = pointsInfo.features.map(function (prp) {
+  return prp.properties.name;
+});
+const infoPlace = pointsInfo.features.map(function (prp) {
+  return prp.properties.place;
+});
+const infoTags = pointsInfo.features.map(function (prp) {
+  return prp.properties.tags;
+});
+const infoPhoto = "style/photos/infoPhoto";
 
-/* returns true if marker's category is "vievpoint", else returns false and writes results to console*/
-// console.log(
-//   points.features.map((prp) => {
-//     return prp.properties.category === "viewpoint";
-//   })
-// );
+const monumentNames = pointsMonument.features.map(function (prp) {
+  return prp.properties.name;
+});
+const monumentPlace = pointsMonument.features.map(function (prp) {
+  return prp.properties.place;
+});
+const monumentTags = pointsMonument.features.map(function (prp) {
+  return prp.properties.tags;
+});
+const monumentPhoto = pointsMonument.features.map(function (prp) {
+  return prp.properties.mainPhoto;
+});
 
-// const catViewpoint = pointsView.features.map((prp) => {
-//   return prp.properties.category === "viewpoint";
-// });
+const viewNames = pointsView.features.map(function (prp) {
+  return prp.properties.name;
+});
+const viewPlace = pointsView.features.map(function (prp) {
+  return prp.properties.place;
+});
+const viewTags = pointsView.features.map(function (prp) {
+  return prp.properties.tags;
+});
+const viewPhoto = pointsView.features.map(function (prp) {
+  return prp.properties.mainPhoto;
+});
 
-// const catMonument = pointsMonument.features.map((prp) => {
-//   if (prp.properties.category === "monument") {
-//     return prp;
-//   } else {
-//     return false;
-//   }
-// });
-
-// const catInfo = pointsInfo.features.map((prp) => {
-//   return prp.properties.category === "info";
-// });
-
-// console.log(catMonument);
-// console.log(points.features.length);
-
-// const catMonument2 = points.features.map((prp) => {
-//   for (let i = 0; i <= points.features.length; i++) {
-//     if (prp.properties.category !== "monument") {
-//       continue;
-//     } else {
-//       return prp;
-//     }
-//   }
-// });
-// console.log(catMonument2);
-
-// // replace Leaflet default blue marker with a custom icon
-// function customIcon(iconpath, latlng) {
-//   let myIcon = L.icon({
-//     iconUrl: iconpath,
-//     iconSize: [25, 41], // size of the icon
-//     iconAnchor: [12, 20], // point of the icon which will correspond to marker's location
-//     //shadowAnchor: [4, 62],  //the same for the shadow
-//     popupAnchor: [0, 0], // point from which the popup should open relative to the iconAnchor
-//   });
-//   const coordInfo = latlng.features.map((prp) => {
-//     return prp.geometry.coordinates;
-//   });
-//   return L.marker(coordInfo, { icon: myIcon });
-// }
-// // create an options object that specifies which function will called on each feature
-// let myLayerOptions = {
-//   pointToLayer: customIcon("./style/markers/camera_marker.png", pointsView),
-// };
+//not finished
+function addElement(dataName, dataPlace, dataTags, dataPhoto) {
+  for (let i = 0; i < dataName.length; i++) {
+    //create elements
+    const divMenuItem = document.createElement("div");
+    const divItemLeft = document.createElement("div");
+    const pItemName = document.createElement("p");
+    const pItemAdress = document.createElement("p");
+    const pItemTags = document.createElement("p");
+    const btn = document.createElement("button");
+    const imgMain = document.createElement("img");
+    // assign class to created elements
+    divMenuItem.classList.add("menu-item");
+    divItemLeft.classList.add("item-left");
+    pItemName.classList.add("item-name");
+    pItemAdress.classList.add("item-adress");
+    pItemTags.classList.add("item-tags");
+    btn.classList.add("btn");
+    imgMain.classList.add("main-img");
+    //add created elemets to choosen DOM elements
+    document.getElementsByClassName("sidebar-menu")[0].appendChild(divMenuItem);
+    document
+      .getElementsByClassName("menu-item")
+      [document.getElementsByClassName("menu-item").length - 1].appendChild(
+        divItemLeft
+      );
+    document
+      .getElementsByClassName("item-left")
+      [document.getElementsByClassName("menu-item").length - 1].appendChild(
+        pItemName
+      );
+    document
+      .getElementsByClassName("item-left")
+      [document.getElementsByClassName("menu-item").length - 1].appendChild(
+        pItemAdress
+      );
+    document
+      .getElementsByClassName("item-left")
+      [document.getElementsByClassName("menu-item").length - 1].appendChild(
+        pItemTags
+      );
+    document
+      .getElementsByClassName("item-left")
+      [document.getElementsByClassName("menu-item").length - 1].appendChild(
+        btn
+      );
+    document
+      .getElementsByClassName("menu-item")
+      [document.getElementsByClassName("menu-item").length - 1].appendChild(
+        imgMain
+      );
+    // add content to created elements
+    pItemName.textContent = dataName[i];
+    pItemAdress.textContent = dataPlace[i];
+    pItemTags.textContent = dataTags[i];
+    btn.textContent = "Zdjęcia";
+    document.getElementsByClassName("main-img")[
+      document.getElementsByClassName("menu-item").length - 1
+    ].src = dataPhoto[i];
+  }
+}
+// dopisac w tagach miejsce wypoczynkowe w viewpointach
+addElement(monumentNames, monumentPlace, monumentTags, monumentPhoto);
+addElement(viewNames, viewPlace, viewTags, viewPhoto);

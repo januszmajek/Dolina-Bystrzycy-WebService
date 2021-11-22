@@ -1,14 +1,20 @@
 const pointsMonument = {
   type: "FeatureCollection",
   name: "pointsMonument",
-  crs: { type: "name", properties: { name: "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+  crs: {
+    type: "name",
+    properties: { name: "urn:ogc:def:crs:OGC:1.3:CRS84" },
+  },
   features: [
     {
       type: "Feature",
       properties: {
-        name: "palaceSosnica",
-        Icon: "monumentMarker",
+        name: "Pałac w Sośnicy",
+        icon: "monumentMarker",
         category: "monument",
+        place: "Sośnica",
+        tags: "obiekt historyczny • zwiedzanie z zewnątrz (obiekt zamknięty)",
+        mainPhoto: "style/photos/monumentPhoto1.jpg",
       },
       geometry: {
         type: "Point",
@@ -18,9 +24,12 @@ const pointsMonument = {
     {
       type: "Feature",
       properties: {
-        name: "palaceMalkowice",
-        Icon: "monumentMarker",
+        name: "Pałac w Małkowicach",
+        icon: "monumentMarker",
         category: "monument",
+        place: "Małkowice",
+        tags: "obiekt historyczny • zwiedzanie z zewnątrz (obiekt zamknięty)",
+        mainPhoto: "style/photos/monumentPhoto2.jpg",
       },
       geometry: {
         type: "Point",
@@ -30,9 +39,12 @@ const pointsMonument = {
     {
       type: "Feature",
       properties: {
-        name: "churchMalkowice",
-        Icon: "monumentMarker",
+        name: "Kościół w Małkowicach",
+        icon: "monumentMarker",
         category: "monument",
+        place: "Małkowice",
+        tags: "kościół katolicki • zwiedzanie z zewnątrz (obiekt zamknięty)",
+        mainPhoto: "style/photos/monumentPhoto3.jpg",
       },
       geometry: {
         type: "Point",
@@ -42,9 +54,12 @@ const pointsMonument = {
     {
       type: "Feature",
       properties: {
-        name: "bridgeMalkowice",
-        Icon: "monumentMarker",
+        name: "Most w Małkowicach",
+        icon: "monumentMarker",
         category: "monument",
+        place: "Małkowice",
+        tags: "obiekt historyczny • na otwartej przestrzeni",
+        mainPhoto: "style/photos/monumentPhoto4.jpg",
       },
       geometry: {
         type: "Point",
@@ -54,9 +69,12 @@ const pointsMonument = {
     {
       type: "Feature",
       properties: {
-        name: "palaceStoszyce",
-        Icon: "monumentMarker",
+        name: "Ruiny Pałacu w Stoszycach",
+        icon: "monumentMarker",
         category: "monument",
+        place: "Stoszyce",
+        tags: "obiekt historyczny • zwiedzanie z zewnątrz (obiekt zamknięty)",
+        mainPhoto: "style/photos/monumentPhoto5.jpg",
       },
       geometry: {
         type: "Point",
@@ -66,9 +84,12 @@ const pointsMonument = {
     {
       type: "Feature",
       properties: {
-        name: "churchSosnica",
-        Icon: "monumentMarker",
+        name: "Kościół w Sośnicy",
+        icon: "monumentMarker",
         category: "monument",
+        place: "Sośnica",
+        tags: "kościół katolicki • zwiedzanie z zewnątrz (obiekt zamknięty)",
+        mainPhoto: "style/photos/monumentPhoto6.jpg",
       },
       geometry: {
         type: "Point",
@@ -78,9 +99,12 @@ const pointsMonument = {
     {
       type: "Feature",
       properties: {
-        name: "gateKrobielowice",
-        Icon: "monumentMarker",
+        name: "Zabytkowa brama w Krobielowicach",
+        icon: "monumentMarker",
         category: "monument",
+        place: "Krobielowice",
+        tags: "obiekt historyczny • na otwartej przestrzeni",
+        mainPhoto: "style/photos/monumentPhoto7.jpg",
       },
       geometry: {
         type: "Point",
@@ -90,9 +114,12 @@ const pointsMonument = {
     {
       type: "Feature",
       properties: {
-        name: "palaceKrobielowice",
-        Icon: "monumentMarker",
+        name: "Pałac w Krobielowicach",
+        icon: "monumentMarker",
         category: "monument",
+        place: "Krobielowice",
+        tags: "obiekt historyczny • zwiedzanie z zewnątrz (obiekt zamknięty)",
+        mainPhoto: "style/photos/monumentPhoto8.jpg",
       },
       geometry: {
         type: "Point",
@@ -102,9 +129,12 @@ const pointsMonument = {
     {
       type: "Feature",
       properties: {
-        name: "palaceCzernczyce",
-        Icon: "monumentMarker",
+        name: "Ruiny pałacu w Czerńczycach",
+        icon: "monumentMarker",
         category: "monument",
+        place: "Czerńczyce",
+        tags: "obiekt historyczny • zwiedzanie z zewnątrz (obiekt zamknięty)",
+        mainPhoto: "style/photos/monumentPhoto9.jpg",
       },
       geometry: {
         type: "Point",
@@ -114,9 +144,12 @@ const pointsMonument = {
     {
       type: "Feature",
       properties: {
-        name: "palaceKamionna",
-        Icon: "monumentMarker",
+        name: "Ruiny pałacu Kamionna",
+        icon: "monumentMarker",
         category: "monument",
+        place: "Kamionna",
+        tags: "obiekt historyczny • zwiedzanie z zewnątrz (obiekt zamknięty)",
+        mainPhoto: "style/photos/monumentPhoto10.jpg",
       },
       geometry: {
         type: "Point",
@@ -126,9 +159,12 @@ const pointsMonument = {
     {
       type: "Feature",
       properties: {
-        name: "palaceMilin",
-        Icon: "monumentMarker",
+        name: "Pałac w Milinie",
+        icon: "monumentMarker",
         category: "monument",
+        place: "Milin",
+        tags: "obiekt historyczny • zwiedzanie z zewnątrz (obiekt zamknięty)",
+        mainPhoto: "style/photos/monumentPhoto11.jpg",
       },
       geometry: {
         type: "Point",
@@ -138,21 +174,12 @@ const pointsMonument = {
     {
       type: "Feature",
       properties: {
-        name: "fallenMonumentMillin",
-        Icon: "monumentMarker",
+        name: "Ruina pałacu w Mietkowie",
+        icon: "monumentMarker",
         category: "monument",
-      },
-      geometry: {
-        type: "Point",
-        coordinates: [16.693665035653574, 50.978410760142701],
-      },
-    },
-    {
-      type: "Feature",
-      properties: {
-        name: "palaceMietkow",
-        Icon: "monumentMarker",
-        category: "monument",
+        place: "Mietków",
+        tags: "obiekt historyczny • zwiedzanie z zewnątrz (obiekt zamknięty)",
+        mainPhoto: "style/photos/monumentPhoto12.jpg",
       },
       geometry: {
         type: "Point",
@@ -162,9 +189,12 @@ const pointsMonument = {
     {
       type: "Feature",
       properties: {
-        name: "palaceDomanice",
-        Icon: "monumentMarker",
+        name: "Pałac w Domanicach",
+        icon: "monumentMarker",
         category: "monument",
+        place: "Domanice",
+        tags: "obiekt historyczny • zwiedzanie z zewnątrz (obiekt zamknięty)",
+        mainPhoto: "style/photos/monumentPhoto13.jpg",
       },
       geometry: {
         type: "Point",
@@ -174,9 +204,12 @@ const pointsMonument = {
     {
       type: "Feature",
       properties: {
-        name: "palaceAlexandrow",
-        Icon: "monumentMarker",
+        name: "Pałac w Samotworze",
+        icon: "monumentMarker",
         category: "monument",
+        place: "Samotwór",
+        tags: "obiekt historyczny • zwiedzanie z zewnątrz (obiekt zamknięty)",
+        mainPhoto: "style/photos/monumentPhoto14.jpg",
       },
       geometry: {
         type: "Point",
@@ -186,9 +219,12 @@ const pointsMonument = {
     {
       type: "Feature",
       properties: {
-        name: "palaceGalow",
-        Icon: "monumentMarker",
+        name: "Ruiny pałacu w Gałowie",
+        icon: "monumentMarker",
         category: "monument",
+        place: "Gałów",
+        tags: "obiekt historyczny • zwiedzanie z zewnątrz (obiekt zamknięty)",
+        mainPhoto: "style/photos/monumentPhoto15.jpg",
       },
       geometry: {
         type: "Point",
@@ -198,9 +234,12 @@ const pointsMonument = {
     {
       type: "Feature",
       properties: {
-        name: "monumentNepomucenGolow",
-        Icon: "monumentMarker",
+        name: "Figura św. Jana Nepomucena",
+        icon: "monumentMarker",
         category: "monument",
+        place: "Gałów",
+        tags: "obiekt historyczny • na otwartej przestrzeni",
+        mainPhoto: "style/photos/monumentPhoto16.jpg",
       },
       geometry: {
         type: "Point",
@@ -210,9 +249,12 @@ const pointsMonument = {
     {
       type: "Feature",
       properties: {
-        name: "churchGolow",
-        Icon: "monumentMarker",
+        name: "Kościół w Gałowie",
+        icon: "monumentMarker",
         category: "monument",
+        place: "Gałów",
+        tags: "kościół katolicki• zwiedzanie z zewnątrz (obiekt zamknięty)",
+        mainPhoto: "style/photos/monumentPhoto17.jpg",
       },
       geometry: {
         type: "Point",

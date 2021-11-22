@@ -1,14 +1,20 @@
 const pointsView = {
   type: "FeatureCollection",
   name: "pointsViewpoint",
-  crs: { type: "name", properties: { name: "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+  crs: {
+    type: "name",
+    properties: { name: "urn:ogc:def:crs:OGC:1.3:CRS84" },
+  },
   features: [
     {
       type: "Feature",
       properties: {
-        name: "beachZalewMietkowski",
-        Icon: "viewpointMarker",
+        name: "Plaża nad Zalewem Mietkowskim",
+        icon: "viewpointMarker",
         category: "viewpoint",
+        place: "Borzygniew",
+        tags: "punkt widokowy • otwarta przestrzeń",
+        mainPhoto: "style/photos/viewPhoto1.jpg",
       },
       geometry: {
         type: "Point",
@@ -18,9 +24,12 @@ const pointsView = {
     {
       type: "Feature",
       properties: {
-        name: "embankmentZalewMietkowski",
-        Icon: "viewpointMarker",
+        name: "Wał na tamie ",
+        icon: "viewpointMarker",
         category: "viewpoint",
+        place: "Mietków",
+        tags: "punkt widokowy • otwarta przestrzeń",
+        mainPhoto: "style/photos/viewPhoto2.jpg",
       },
       geometry: {
         type: "Point",
@@ -30,9 +39,12 @@ const pointsView = {
     {
       type: "Feature",
       properties: {
-        name: "viewpointKsiezePark",
-        Icon: "viewpointMarker",
+        name: "Kładka w Parku Staromiejskim",
+        icon: "viewpointMarker",
         category: "viewpoint",
+        place: "Kąty Wrocławskie",
+        tags: "punkt widokowy • otwarta przestrzeń",
+        mainPhoto: "style/photos/viewPhoto3.jpg",
       },
       geometry: {
         type: "Point",
@@ -42,9 +54,12 @@ const pointsView = {
     {
       type: "Feature",
       properties: {
-        name: "viewpointMostekKsiazePark",
-        Icon: "viewpointMarker",
+        name: "Mostek w Parku Staromiejskim",
+        icon: "viewpointMarker",
         category: "viewpoint",
+        place: "Kąty Wrocławskie",
+        tags: "punkt widokowy • otwarta przestrzeń",
+        mainPhoto: "style/photos/viewPhoto4.jpg",
       },
       geometry: {
         type: "Point",
@@ -54,9 +69,12 @@ const pointsView = {
     {
       type: "Feature",
       properties: {
-        name: "viewpoint_KladkaNaBystrzycy",
-        Icon: "viewpointMarker",
+        name: "Kładka na Bystrzycy",
+        icon: "viewpointMarker",
         category: "viewpoint",
+        place: "Kąty wrocławskie",
+        tags: "punkt widokowy • otwarta przestrzeń",
+        mainPhoto: "style/photos/viewPhoto5.jpg",
       },
       geometry: {
         type: "Point",
@@ -66,9 +84,12 @@ const pointsView = {
     {
       type: "Feature",
       properties: {
-        name: "viewpoint1Ksieze",
-        Icon: "viewpointMarker",
+        name: "Widok na Bystrzycę",
+        icon: "viewpointMarker",
         category: "viewpoint",
+        place: "Kąty Wrocławskie",
+        tags: "punkt widokowy • otwarta przestrzeń",
+        mainPhoto: "style/photos/viewPhoto6.jpg",
       },
       geometry: {
         type: "Point",
@@ -78,9 +99,12 @@ const pointsView = {
     {
       type: "Feature",
       properties: {
-        name: "viewpointProszkowice",
-        Icon: "viewpointMarker",
+        name: "Zbiornik wodny w Proszkowicach",
+        icon: "viewpointMarker",
         category: "viewpoint",
+        place: "Proszkowice",
+        tags: "punkt widokowy • otwarta przestrzeń",
+        mainPhoto: "style/photos/viewPhoto7.jpg",
       },
       geometry: {
         type: "Point",
