@@ -93,7 +93,9 @@ const infoPlace = pointsInfo.features.map(function (prp) {
 const infoTags = pointsInfo.features.map(function (prp) {
   return prp.properties.tags;
 });
-const infoPhoto = "style/photos/infoPhoto";
+const infoPhoto = pointsInfo.features.map(function (prp) {
+  return prp.properties.mainPhoto;
+});
 
 const monumentNames = pointsMonument.features.map(function (prp) {
   return prp.properties.name;
@@ -134,6 +136,7 @@ function addElement(dataName, dataPlace, dataTags, dataPhoto) {
     const imgMain = document.createElement("img");
     // assign class to created elements
     divMenuItem.classList.add("menu-item");
+    divMenuItem.id = dataName[i];
     divItemLeft.classList.add("item-left");
     pItemName.classList.add("item-name");
     pItemAdress.classList.add("item-adress");
@@ -185,3 +188,78 @@ function addElement(dataName, dataPlace, dataTags, dataPhoto) {
 // dopisac w tagach miejsce wypoczynkowe w viewpointach
 addElement(monumentNames, monumentPlace, monumentTags, monumentPhoto);
 addElement(viewNames, viewPlace, viewTags, viewPhoto);
+addElement(infoNames, infoPlace, infoTags, infoPhoto);
+
+//zoom to marker
+function zoomSpeed() {
+  let speed = 0;
+  if (map.getZoom() > 16) {
+    speed = 0.1;
+  } else {
+    speed = 0.8;
+  }
+  return speed;
+}
+
+pInfo.on("click", function (e) {
+  // e is an event object (MouseEvent in this case)
+  // alert(e.latlng);
+  map.flyTo(e.latlng, 18, {
+    aniamte: true,
+    duration: zoomSpeed(),
+  });
+});
+pMonument.on("click", function (e) {
+  map.flyTo(e.latlng, 18, {
+    aniamte: true,
+    duration: zoomSpeed(),
+  });
+});
+pView.on("click", function (e) {
+  map.flyTo(e.latlng, 18, {
+    aniamte: true,
+    duration: zoomSpeed(),
+  });
+});
+
+let mMonument = Object.keys(pMonument._layers).map(function (keys) {
+  return [
+    pMonument._layers[keys].feature.properties.name,
+    pMonument._layers[keys]._latlng,
+  ];
+});
+let mView = Object.keys(pView._layers).map(function (keys) {
+  return [
+    pView._layers[keys].feature.properties.name,
+    pView._layers[keys]._latlng,
+  ];
+});
+let mInfo = Object.keys(pInfo._layers).map(function (keys) {
+  return [
+    pInfo._layers[keys].feature.properties.name,
+    pInfo._layers[keys]._latlng,
+  ];
+});
+
+const allMarkers = mMonument.concat(mView, mInfo);
+let allMarkersNames = allMarkers.map(function (prp) {
+  return prp[0];
+});
+let allMarkersCoords = allMarkers.map(function (prp) {
+  return prp[1];
+});
+
+Array.from(document.getElementsByClassName("menu-item")).map(function (
+  element
+) {
+  element.addEventListener("click", function () {
+    for (let i = 0; i < allMarkersNames.length; i++) {
+      if (allMarkersNames[i].includes(element.id)) {
+        map.flyTo(allMarkersCoords[i], 18, {
+          animate: true,
+          duration: zoomSpeed(),
+        });
+      }
+    }
+  });
+});

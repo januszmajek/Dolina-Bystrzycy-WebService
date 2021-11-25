@@ -1,14 +1,20 @@
 const pointsInfo = {
   type: "FeatureCollection",
   name: "pointsInfo",
-  crs: { type: "name", properties: { name: "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+  crs: {
+    type: "name",
+    properties: { name: "urn:ogc:def:crs:OGC:1.3:CRS84" },
+  },
   features: [
     {
       type: "Feature",
       properties: {
-        name: "info11Malkowice",
-        Icon: "infoMarker",
+        name: "Kultura i historia Doliny Bystrzycy",
+        icon: "infoMarker",
         category: "info",
+        place: "Małkowice",
+        tags: "tablica informacyjna • otwarta przestrzeń",
+        mainPhoto: "style/photos/infoPhoto1.jpg",
       },
       geometry: {
         type: "Point",
@@ -18,9 +24,12 @@ const pointsInfo = {
     {
       type: "Feature",
       properties: {
-        name: "info5Stoszyce",
-        Icon: "infoMarker",
+        name: "Stoszyce",
+        icon: "infoMarker",
         category: "info",
+        place: "Stoszyce",
+        tags: "tablica informacyjna • otwarta przestrzeń",
+        mainPhoto: "style/photos/infoPhoto2.jpg",
       },
       geometry: {
         type: "Point",
@@ -29,7 +38,14 @@ const pointsInfo = {
     },
     {
       type: "Feature",
-      properties: { name: "info35Katy", Icon: "infoMarker", category: "info" },
+      properties: {
+        name: "Nasadzenia w Parku Staromiejskim",
+        icon: "infoMarker",
+        category: "info",
+        place: "Kąty Wrocławskie",
+        tags: "tablica informacyjna • otwarta przestrzeń • Park Staromiejski",
+        mainPhoto: "style/photos/infoPhoto3.jpg",
+      },
       geometry: {
         type: "Point",
         coordinates: [16.773464780608389, 51.032672245284012],
@@ -37,7 +53,14 @@ const pointsInfo = {
     },
     {
       type: "Feature",
-      properties: { name: "info36Katy", Icon: "infoMarker", category: "info" },
+      properties: {
+        name: "Obserwacja Ptaków",
+        icon: "infoMarker",
+        category: "info",
+        place: "Kąty Wrocławskie",
+        tags: "tablica informacyjna • otwarta przestrzeń • Park Staromiejski",
+        mainPhoto: "style/photos/infoPhoto4.jpg",
+      },
       geometry: {
         type: "Point",
         coordinates: [16.77301028031917, 51.032804869412701],
@@ -46,9 +69,12 @@ const pointsInfo = {
     {
       type: "Feature",
       properties: {
-        name: "info40Ksieze",
-        Icon: "infoMarker",
+        name: "Warstwy lasu",
+        icon: "infoMarker",
         category: "info",
+        place: "Kąty Wrocławskie",
+        tags: "tablica informacyjna • otwarta przestrzeń • Park Staromiejski",
+        mainPhoto: "style/photos/infoPhoto5.jpg",
       },
       geometry: {
         type: "Point",
@@ -58,9 +84,12 @@ const pointsInfo = {
     {
       type: "Feature",
       properties: {
-        name: "info32Ksieze",
-        Icon: "infoMarker",
+        name: "Dziuple",
+        icon: "infoMarker",
         category: "info",
+        place: "Kąty Wrocławskie",
+        tags: "tablica informacyjna • otwarta przestrzeń • Park Staromiejski",
+        mainPhoto: "style/photos/infoPhoto6.jpg",
       },
       geometry: {
         type: "Point",
@@ -70,9 +99,12 @@ const pointsInfo = {
     {
       type: "Feature",
       properties: {
-        name: "info25Ksieze",
-        Icon: "infoMarker",
+        name: "Żaba moczarowa",
+        icon: "infoMarker",
         category: "info",
+        place: "Kąty Wrocławskie",
+        tags: "tablica informacyjna • otwarta przestrzeń • Park Staromiejski",
+        mainPhoto: "style/photos/infoPhoto7.jpg",
       },
       geometry: {
         type: "Point",
@@ -82,9 +114,12 @@ const pointsInfo = {
     {
       type: "Feature",
       properties: {
-        name: "info32aKsiaze",
-        Icon: "infoMarker",
+        name: "Budki lęgowe i rozrodcze",
+        icon: "infoMarker",
         category: "info",
+        place: "Kąty Wrocławskie",
+        tags: "tablica informacyjna • otwarta przestrzeń • Park Staromiejski",
+        mainPhoto: "style/photos/infoPhoto8.jpg",
       },
       geometry: {
         type: "Point",
@@ -94,9 +129,12 @@ const pointsInfo = {
     {
       type: "Feature",
       properties: {
-        name: "info24Ksieze",
-        Icon: "infoMarker",
+        name: "Nietoperze (Park Staromiejski)",
+        icon: "infoMarker",
         category: "info",
+        place: "Kąty Wrocławskie",
+        tags: "tablica informacyjna • otwarta przestrzeń • Park Staromiejski",
+        mainPhoto: "style/photos/infoPhoto9.jpg",
       },
       geometry: {
         type: "Point",
@@ -106,9 +144,12 @@ const pointsInfo = {
     {
       type: "Feature",
       properties: {
-        name: "info23Ksieze",
-        Icon: "infoMarker",
+        name: "Grab",
+        icon: "infoMarker",
         category: "info",
+        place: "Kąty Wrocławskie",
+        tags: "tablica informacyjna • otwarta przestrzeń • Park Staromiejski",
+        mainPhoto: "style/photos/infoPhoto10.jpg",
       },
       geometry: {
         type: "Point",
@@ -117,7 +158,14 @@ const pointsInfo = {
     },
     {
       type: "Feature",
-      properties: { name: "info6Ksieze", Icon: "infoMarker", category: "info" },
+      properties: {
+        name: "Park Krajobrazowy",
+        icon: "infoMarker",
+        category: "info",
+        place: "Kąty Wrocławskie",
+        tags: "tablica informacyjna • otwarta przestrzeń • Park Staromiejski",
+        mainPhoto: "style/photos/infoPhoto11.jpg",
+      },
       geometry: {
         type: "Point",
         coordinates: [16.776997131429269, 51.031969777494254],
@@ -125,7 +173,14 @@ const pointsInfo = {
     },
     {
       type: "Feature",
-      properties: { name: "info8Ksieze", Icon: "infoMarker", category: "info" },
+      properties: {
+        name: "Drzewa",
+        icon: "infoMarker",
+        category: "info",
+        place: "Kąty Wrocławskie",
+        tags: "tablica informacyjna • otwarta przestrzeń • Park Staromiejski",
+        mainPhoto: "style/photos/infoPhoto12.jpg",
+      },
       geometry: {
         type: "Point",
         coordinates: [16.776201333498349, 51.031657565573141],
@@ -133,7 +188,14 @@ const pointsInfo = {
     },
     {
       type: "Feature",
-      properties: { name: "info1Ksieze", Icon: "infoMarker", category: "info" },
+      properties: {
+        name: 'Ryby "podwodni łowcy"',
+        icon: "infoMarker",
+        category: "info",
+        place: "Kąty Wrocławskie",
+        tags: "tablica informacyjna • otwarta przestrzeń • Park Staromiejski",
+        mainPhoto: "style/photos/infoPhoto13.jpg",
+      },
       geometry: {
         type: "Point",
         coordinates: [16.778207519359775, 51.03131663961954],
@@ -142,9 +204,12 @@ const pointsInfo = {
     {
       type: "Feature",
       properties: {
-        name: "info2RybyKsieze",
-        Icon: "infoMarker",
+        name: 'Ryby "w krainie lipienia"',
+        icon: "infoMarker",
         category: "info",
+        place: "Kąty Wrocławskie",
+        tags: "tablica informacyjna • otwarta przestrzeń • Park Staromiejski",
+        mainPhoto: "style/photos/infoPhoto14.jpg",
       },
       geometry: {
         type: "Point",
@@ -153,7 +218,14 @@ const pointsInfo = {
     },
     {
       type: "Feature",
-      properties: { name: "info1Ksieze", Icon: "infoMarker", category: "info" },
+      properties: {
+        name: "Las mieszany",
+        icon: "infoMarker",
+        category: "info",
+        place: "Kąty Wrocławskie",
+        tags: "tablica informacyjna • otwarta przestrzeń • Park Staromiejski",
+        mainPhoto: "style/photos/infoPhoto15.jpg",
+      },
       geometry: {
         type: "Point",
         coordinates: [16.776478171972524, 51.030280277493929],
@@ -162,9 +234,12 @@ const pointsInfo = {
     {
       type: "Feature",
       properties: {
-        name: "infoDomanice",
-        Icon: "infoMarker",
+        name: "Zespół dworsko-gospodarczym w Domanicach",
+        icon: "infoMarker",
         category: "info",
+        place: "Domanice",
+        tags: "tablica informacyjna • otwarta przestrzeń",
+        mainPhoto: "style/photos/infoPhoto16.jpg",
       },
       geometry: {
         type: "Point",
@@ -174,9 +249,12 @@ const pointsInfo = {
     {
       type: "Feature",
       properties: {
-        name: "info12Samotwor",
-        Icon: "infoMarker",
+        name: "Nietoperze (Samotwór)",
+        icon: "infoMarker",
         category: "info",
+        place: "Samotwór",
+        tags: "tablica informacyjna • otwarta przestrzeń",
+        mainPhoto: "style/photos/infoPhoto17.jpg",
       },
       geometry: {
         type: "Point",
@@ -185,7 +263,14 @@ const pointsInfo = {
     },
     {
       type: "Feature",
-      properties: { name: "info3Galow", Icon: "infoMarker", category: "info" },
+      properties: {
+        name: "Informacje o Gałowie",
+        icon: "infoMarker",
+        category: "info",
+        place: "Gałów",
+        tags: "tablica informacyjna • otwarta przestrzeń",
+        mainPhoto: "style/photos/infoPhoto18.jpg",
+      },
       geometry: {
         type: "Point",
         coordinates: [16.815606838550256, 51.110794620068617],
