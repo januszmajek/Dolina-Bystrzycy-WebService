@@ -57,9 +57,9 @@ const pBorder = L.geoJSON(parkBorder, {
 });
 const pBeaver = L.geoJSON(beaverTrail);
 const pBielik = L.geoJSON(bieliksTrail);
-pInfo.addTo(map);
-pMonument.addTo(map);
-pView.addTo(map);
+pInfo.addTo(map).bindPopup("hejunia");
+pMonument.addTo(map).bindPopup("hejunia");
+pView.addTo(map).bindPopup("hejunia");
 pBorder.addTo(map);
 
 // map background layers used in layer controller
@@ -189,8 +189,8 @@ function addElement(dataName, dataPlace, dataTags, dataPhoto) {
 addElement(monumentNames, monumentPlace, monumentTags, monumentPhoto);
 addElement(viewNames, viewPlace, viewTags, viewPhoto);
 addElement(infoNames, infoPlace, infoTags, infoPhoto);
-
-//zoom to marker
+//ZOOM
+//zoom speed
 function zoomSpeed() {
   let speed = 0;
   if (map.getZoom() > 16) {
@@ -200,28 +200,19 @@ function zoomSpeed() {
   }
   return speed;
 }
-
+//set view to clicked marker
 pInfo.on("click", function (e) {
   // e is an event object (MouseEvent in this case)
   // alert(e.latlng);
-  map.flyTo(e.latlng, 18, {
-    aniamte: true,
-    duration: zoomSpeed(),
-  });
+  map.setView(e.latlng);
 });
 pMonument.on("click", function (e) {
-  map.flyTo(e.latlng, 18, {
-    aniamte: true,
-    duration: zoomSpeed(),
-  });
+  map.setView(e.latlng);
 });
 pView.on("click", function (e) {
-  map.flyTo(e.latlng, 18, {
-    aniamte: true,
-    duration: zoomSpeed(),
-  });
+  map.setView(e.latlng);
 });
-
+// names and coordinates all connected in one array
 let mMonument = Object.keys(pMonument._layers).map(function (keys) {
   return [
     pMonument._layers[keys].feature.properties.name,
@@ -240,15 +231,34 @@ let mInfo = Object.keys(pInfo._layers).map(function (keys) {
     pInfo._layers[keys]._latlng,
   ];
 });
-
 const allMarkers = mMonument.concat(mView, mInfo);
-let allMarkersNames = allMarkers.map(function (prp) {
+const allMarkersNames = allMarkers.map(function (prp) {
   return prp[0];
 });
-let allMarkersCoords = allMarkers.map(function (prp) {
+const allMarkersCoords = allMarkers.map(function (prp) {
   return prp[1];
 });
-
+// objects from pInfo, pMonument, pView all connected to one array
+const idMonument = Object.entries(pMonument._layers).map(function (e) {
+  return e;
+});
+const objMonument = idMonument.map(function (f) {
+  return f[1];
+});
+const idView = Object.entries(pView._layers).map(function (e) {
+  return e;
+});
+const objView = idView.map(function (f) {
+  return f[1];
+});
+const idInfo = Object.entries(pInfo._layers).map(function (e) {
+  return e;
+});
+const objInfo = idInfo.map(function (f) {
+  return f[1];
+});
+const rlyMarkers = objMonument.concat(objView, objInfo);
+//when one of "menu-item" class divs is clicked, the map zooms to that points marker on the map and displays a popup
 Array.from(document.getElementsByClassName("menu-item")).map(function (
   element
 ) {
@@ -259,7 +269,23 @@ Array.from(document.getElementsByClassName("menu-item")).map(function (
           animate: true,
           duration: zoomSpeed(),
         });
+        rlyMarkers[i].bindPopup(allMarkersNames[i]).openPopup();
       }
     }
   });
 });
+// add search filter
+function listFilter() {
+  const input = document.getElementById("search");
+  const filter = input.value.toUpperCase();
+  const sidebarItems = document.getElementsByClassName("menu-item");
+
+  Array.from(sidebarItems).forEach(function (e) {
+    const title = e.firstElementChild.firstElementChild.textContent;
+    if (title.toUpperCase().indexOf(filter) > -1) {
+      e.style.display = "flex";
+    } else {
+      e.style.display = "none";
+    }
+  });
+}

@@ -25,7 +25,12 @@
     </div>
     <div id="left-bar">
       <div id="search-top">
-        <input type="text" placeholder="Wyszukaj obiekt..." />
+        <input
+          type="text"
+          id="search"
+          onkeydown="listFilter()"
+          placeholder="Wyszukaj obiekt..."
+        />
       </div>
       <div class="sidebar-menu"></div>
     </div>
