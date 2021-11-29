@@ -142,9 +142,10 @@ function addElement(dataName, dataPlace, dataTags, dataPhoto) {
     pItemAdress.classList.add("item-adress");
     pItemTags.classList.add("item-tags");
     btn.classList.add("btn");
+    btn.setAttribute("onclick", "moreDetails()");
     imgMain.classList.add("main-img");
     //add created elemets to choosen DOM elements
-    document.getElementsByClassName("sidebar-menu")[0].appendChild(divMenuItem);
+    document.getElementById("sideNav").appendChild(divMenuItem);
     document
       .getElementsByClassName("menu-item")
       [document.getElementsByClassName("menu-item").length - 1].appendChild(
@@ -179,7 +180,7 @@ function addElement(dataName, dataPlace, dataTags, dataPhoto) {
     pItemName.textContent = dataName[i];
     pItemAdress.textContent = dataPlace[i];
     pItemTags.textContent = dataTags[i];
-    btn.textContent = "Zdjęcia";
+    btn.textContent = "Więcej";
     document.getElementsByClassName("main-img")[
       document.getElementsByClassName("menu-item").length - 1
     ].src = dataPhoto[i];
@@ -274,6 +275,7 @@ Array.from(document.getElementsByClassName("menu-item")).map(function (
     }
   });
 });
+
 // add search filter
 function listFilter() {
   const input = document.getElementById("search");
@@ -288,4 +290,18 @@ function listFilter() {
       e.style.display = "none";
     }
   });
+}
+//more details about object when "more" button is clicked
+function moreDetails() {
+  document.getElementById("sideProp").style.width = "600px";
+}
+
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+  document.getElementById("sideProp").style.width = "0";
+}
+
+// enlarge img from gallery on click
+function enlImg() {
+  document.createElement("div");
 }

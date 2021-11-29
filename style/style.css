@@ -73,6 +73,77 @@ body {
 .sidebar-menu::-webkit-scrollbar {
   display: none;
 }
+#sideProp {
+  width: 0px;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  background-color: #ffffff;
+  overflow-x: hidden;
+  padding-top: 10px;
+  transition: 0.5s;
+}
+.sidePropTop {
+  display: flex;
+  margin-left: 25px;
+  margin-right: 25px;
+  border-bottom: solid black;
+}
+.sidePropTop a {
+  font-size: 36px;
+  text-decoration: none;
+  color: black;
+  display: flex;
+  padding: 14px 0px 8px 0px;
+  margin-left: auto;
+  transition: 0.3s;
+}
+.sidePropTop a:hover {
+  color: #8b8585;
+}
+.sidePropFirstInfo {
+  display: flex;
+  flex-direction: column;
+  margin-left: 25px;
+  margin-right: 25px;
+  border-bottom: solid black;
+}
+.sidePropFirstInfo .location {
+  display: flex;
+  align-items: baseline;
+}
+.sidePropFirstInfo .locType {
+  display: flex;
+  align-items: baseline;
+}
+
+.sidePropSecondInfo {
+  display: flex;
+  margin-left: 25px;
+  margin-right: 25px;
+  border-bottom: solid black;
+}
+.photoGallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 16px 16px;
+  margin: 16px 25px 16px 25px;
+}
+.pic {
+  display: flex;
+  height: 267px;
+  width: 267px;
+}
+.pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(201, 74, 74, 0.19);
+  cursor: pointer;
+}
 
 .menu-item {
   display: flex;
