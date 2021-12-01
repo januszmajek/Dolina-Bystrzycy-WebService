@@ -18,10 +18,14 @@
   </head>
 
   <body>
-    <div id="navbar">
+    <div id="navbar" onclick="closeNav()">
       <h2>Park Krajobrazowy Dolina Bystrzycy</h2>
-      <button id="about" class="btn">O mapie</button>
-      <button id="contact" class="btn">Kontakt</button>
+      <button id="about" class="btn" onclick="abtMap(), closeContact()">
+        O mapie
+      </button>
+      <button id="contactBtn" class="btn" onclick="contact(), closeAbtMap()">
+        Kontakt
+      </button>
     </div>
     <div id="left-bar">
       <div id="search-top" onclick="closeNav()">
@@ -33,7 +37,11 @@
           placeholder="Wyszukaj obiekt..."
         />
       </div>
-      <div id="sideNav" class="sidebar-menu"></div>
+      <div
+        id="sideNav"
+        class="sidebar-menu"
+        onclick="closeAbtMap(), closeContact()"
+      ></div>
       <div id="sideProp" class="sidebar-menu">
         <div class="sidePropTop">
           <h2>Pałac w Sośnicy</h2>
@@ -80,6 +88,55 @@
         </div>
       </div>
     </div>
-    <div id="map" onclick="closeNav()"></div>
+    <div id="map" onclick="closeNav(), closeAbtMap(), closeContact()"></div>
+    <div id="abtMap" class="rightSidebar">
+      <div class="rightSidebarContent">
+        <div class="rightSidebarClose">
+          <h2>O mapie</h2>
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >&times;</a
+          >
+        </div>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio eaque
+          labore recusandae iste velit consequatur, nihil repellendus repellat
+          saepe quia inventore commodi veritatis ipsam culpa soluta incidunt
+          quaerat porro nemo, eligendi numquam aliquid sit! Amet eum sed rerum,
+          dolores corporis unde accusantium iste distinctio commodi voluptatem
+          nostrum totam odit facilis voluptatum excepturi dolorem quam adipisci
+          error in porro eveniet! Eum, velit. Voluptate commodi iste officia,
+          repellendus laboriosam non illum. Nulla eos explicabo, saepe adipisci
+          non soluta, iure cumque ex nihil debitis quam quidem illo deserunt
+          itaque veniam! Cum quasi mollitia reprehenderit, magni provident rem
+          deserunt dolores illum, hic temporibus consequatur.
+        </p>
+        <h2>Dane z różnych źródeł</h2>
+        <ul>
+          <li><a href="https://boxicons.com/">BoxIcons</a></li>
+          <li><a href="https://boxicons.com/">BoxIcons</a></li>
+          <li><a href="https://boxicons.com/">BoxIcons</a></li>
+          <li><a href="https://boxicons.com/">BoxIcons</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="contact" class="rightSidebar">
+      <div class="rightSidebarContent">
+        <div class="rightSidebarClose">
+          <h2>Kontakt</h2>
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >&times;</a
+          >
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam
+          dolorum officia nemo est optio id consectetur odit voluptatibus sit,
+          blanditiis impedit mollitia? Doloribus deleniti voluptatibus ipsam
+          alias accusantium aliquam tempore natus iusto commodi! Quis ducimus
+          voluptate quia beatae voluptatem pariatur, perspiciatis numquam
+          voluptas iure sunt aliquid, amet voluptates? Perspiciatis, molestias.
+        </p>
+      </div>
+    </div>
   </body>
 </html>

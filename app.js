@@ -295,13 +295,26 @@ function listFilter() {
 function moreDetails() {
   document.getElementById("sideProp").style.width = "600px";
 }
+// navbar buttons functionality
+function abtMap() {
+  document.getElementById("abtMap").style.width = "400px";
+}
+function contact() {
+  document.getElementById("contact").style.width = "400px";
+}
 
 /* Set the width of the side navigation to 0 */
 function closeNav() {
   document.getElementById("sideProp").style.width = "0";
 }
+function closeAbtMap() {
+  document.getElementById("abtMap").style.width = "0";
+}
+function closeContact() {
+  document.getElementById("contact").style.width = "0";
+}
 
 // enlarge img from gallery on click
-function enlImg() {
-  document.createElement("div");
-}
+// function enlImg() {
+//   document.createElement("div");
+// }
