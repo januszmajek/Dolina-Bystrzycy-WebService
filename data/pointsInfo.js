@@ -214,7 +214,7 @@ const pointsInfo = {
         description:
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis obcaecati cum pariatur accusantium numquam, magni hic, eos ipsa laborum sequi suscipit voluptatibus eius molestias voluptatem nulla molestiae officia laudantium nemo aliquid ipsum sunt, corrupti doloribus ab. In vitae velit laudantium fuga nisi, possimus non. Explicabo error saepe delectus necessitatibus natus.",
         media: [
-          "./style/photos/other_photos/park_krajobrazowy/20211021_121436. jpg",
+          "./style/photos/other_photos/park_krajobrazowy/20211021_121436.jpg",
         ],
       },
       geometry: {
