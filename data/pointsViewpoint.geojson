@@ -14,7 +14,22 @@
         "category": "viewpoint",
         "place": "Borzygniew",
         "tags": "punkt widokowy • otwarta przestrzeń",
-        "mainPhoto": "style/photos/viewPhoto1.jpg"
+        "mainPhoto": "style/photos/viewPhoto1.jpg",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis obcaecati cum pariatur accusantium numquam, magni hic, eos ipsa laborum sequi suscipit voluptatibus eius molestias voluptatem nulla molestiae officia laudantium nemo aliquid ipsum sunt, corrupti doloribus ab. In vitae velit laudantium fuga nisi, possimus non. Explicabo error saepe delectus necessitatibus natus.",
+        "media": [
+          "style/photos/other_photos/plaza/20211021_134755.jpg",
+          "style/photos/other_photos/plaza/20211021_134814.jpg",
+          "style/photos/other_photos/plaza/20211021_134825.jpg",
+          "style/photos/other_photos/plaza/20211021_134834.jpg",
+          "style/photos/other_photos/plaza/20211021_134846.jpg",
+          "style/photos/other_photos/plaza/20211021_134908.jpg",
+          "style/photos/other_photos/plaza/20211021_134921.jpg",
+          "style/photos/other_photos/plaza/20211021_134927.jpg",
+          "style/photos/other_photos/plaza/20211021_135013.jpg",
+          "style/photos/other_photos/plaza/20211021_135036.jpg",
+          "style/photos/other_photos/plaza/20211021_135038.jpg",
+          "style/photos/other_photos/plaza/20211021_135117.jpg"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -29,7 +44,13 @@
         "category": "viewpoint",
         "place": "Mietków",
         "tags": "punkt widokowy • otwarta przestrzeń",
-        "mainPhoto": "style/photos/viewPhoto2.jpg"
+        "mainPhoto": "style/photos/viewPhoto2.jpg",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis obcaecati cum pariatur accusantium numquam, magni hic, eos ipsa laborum sequi suscipit voluptatibus eius molestias voluptatem nulla molestiae officia laudantium nemo aliquid ipsum sunt, corrupti doloribus ab. In vitae velit laudantium fuga nisi, possimus non. Explicabo error saepe delectus necessitatibus natus.",
+        "media": [
+          "style/photos/other_photos/wal/20211021_140850.jpg",
+          "style/photos/other_photos/wal/20211021_140852.jpg",
+          "style/photos/other_photos/wal/20211021_140908.jpg"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -44,7 +65,13 @@
         "category": "viewpoint",
         "place": "Kąty Wrocławskie",
         "tags": "punkt widokowy • otwarta przestrzeń",
-        "mainPhoto": "style/photos/viewPhoto3.jpg"
+        "mainPhoto": "style/photos/viewPhoto3.jpg",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis obcaecati cum pariatur accusantium numquam, magni hic, eos ipsa laborum sequi suscipit voluptatibus eius molestias voluptatem nulla molestiae officia laudantium nemo aliquid ipsum sunt, corrupti doloribus ab. In vitae velit laudantium fuga nisi, possimus non. Explicabo error saepe delectus necessitatibus natus.",
+        "media": [
+          "style/photos/other_photos/kladka_w_parku/20211021_120535.jpg",
+          "style/photos/other_photos/kladka_w_parku/20211021_120544.jpg",
+          "style/photos/other_photos/kladka_w_parku/20211021_120552.jpg"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -59,7 +86,11 @@
         "category": "viewpoint",
         "place": "Kąty Wrocławskie",
         "tags": "punkt widokowy • otwarta przestrzeń",
-        "mainPhoto": "style/photos/viewPhoto4.jpg"
+        "mainPhoto": "style/photos/viewPhoto4.jpg",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis obcaecati cum pariatur accusantium numquam, magni hic, eos ipsa laborum sequi suscipit voluptatibus eius molestias voluptatem nulla molestiae officia laudantium nemo aliquid ipsum sunt, corrupti doloribus ab. In vitae velit laudantium fuga nisi, possimus non. Explicabo error saepe delectus necessitatibus natus.",
+        "media": [
+          "style/photos/other_photos/mostek_w_parku/20211021_120935.jpg"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -74,7 +105,12 @@
         "category": "viewpoint",
         "place": "Kąty wrocławskie",
         "tags": "punkt widokowy • otwarta przestrzeń",
-        "mainPhoto": "style/photos/viewPhoto5.jpg"
+        "mainPhoto": "style/photos/viewPhoto5.jpg",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis obcaecati cum pariatur accusantium numquam, magni hic, eos ipsa laborum sequi suscipit voluptatibus eius molestias voluptatem nulla molestiae officia laudantium nemo aliquid ipsum sunt, corrupti doloribus ab. In vitae velit laudantium fuga nisi, possimus non. Explicabo error saepe delectus necessitatibus natus.",
+        "media": [
+          "style/photos/other_photos/kladka_na_bystrzycy/20211021_121536.jpg",
+          "style/photos/other_photos/kladka_na_bystrzycy/20211021_121642.jpg"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -89,7 +125,14 @@
         "category": "viewpoint",
         "place": "Kąty Wrocławskie",
         "tags": "punkt widokowy • otwarta przestrzeń",
-        "mainPhoto": "style/photos/viewPhoto6.jpg"
+        "mainPhoto": "style/photos/viewPhoto6.jpg",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis obcaecati cum pariatur accusantium numquam, magni hic, eos ipsa laborum sequi suscipit voluptatibus eius molestias voluptatem nulla molestiae officia laudantium nemo aliquid ipsum sunt, corrupti doloribus ab. In vitae velit laudantium fuga nisi, possimus non. Explicabo error saepe delectus necessitatibus natus.",
+        "media": [
+          "style/photos/other_photos/widok_na_bystrzyce/20211021_122131.jpg",
+          "style/photos/other_photos/widok_na_bystrzyce/20211021_122142.jpg",
+          "style/photos/other_photos/widok_na_bystrzyce/20211021_122156.jpg",
+          "style/photos/other_photos/widok_na_bystrzyce/20211021_122201.jpg"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -104,7 +147,13 @@
         "category": "viewpoint",
         "place": "Proszkowice",
         "tags": "punkt widokowy • otwarta przestrzeń",
-        "mainPhoto": "style/photos/viewPhoto7.jpg"
+        "mainPhoto": "style/photos/viewPhoto7.jpg",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis obcaecati cum pariatur accusantium numquam, magni hic, eos ipsa laborum sequi suscipit voluptatibus eius molestias voluptatem nulla molestiae officia laudantium nemo aliquid ipsum sunt, corrupti doloribus ab. In vitae velit laudantium fuga nisi, possimus non. Explicabo error saepe delectus necessitatibus natus.",
+        "media": [
+          "style/photos/other_photos/proszkowice_zbiornik/20211021_144925.jpg",
+          "style/photos/other_photos/proszkowice_zbiornik/20211021_144929.jpg",
+          "style/photos/other_photos/proszkowice_zbiornik/20211021_144951.jpg"
+        ]
       },
       "geometry": {
         "type": "Point",

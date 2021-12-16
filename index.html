@@ -19,7 +19,7 @@
 
   <body>
     <div id="navbar" onclick="closeNav()">
-      <h2>Park Krajobrazowy Dolina Bystrzycy</h2>
+      <h2 id="title-Nav">Park Krajobrazowy Dolina Bystrzycy</h2>
       <button id="about" class="btn" onclick="abtMap(), closeContact()">
         O mapie
       </button>
@@ -42,62 +42,57 @@
         class="sidebar-menu"
         onclick="closeAbtMap(), closeContact()"
       ></div>
-      <div id="sideProp" class="sidebar-menu">
-        <div class="sidePropTop">
-          <h2>Pałac w Sośnicy</h2>
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-            >&times;</a
-          >
-        </div>
-        <div class="sidePropFirstInfo">
-          <div class="location">
-            <img
-              class="locIkon"
-              src="style/markers/basic.svg"
-              alt="Lokalizacja"
-            />
-            <h3>Sośnica</h3>
+      <div id="sideProperity" class="sidebar-menu">
+        <!-- <div class="sideProp">
+          <div class="sidePropTop">
+            <h2>Pałac w Sośnicy</h2>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+              >&times;</a
+            >
           </div>
-          <div class="locType">
-            <img
-              class="locIkon"
-              src="style/markers/basic.svg"
-              alt="Lokalizacja"
-            />
-            <h3>Obiekt historyczny</h3>
+          <div class="sidePropFirstInfo">
+            <div class="location">
+              <div class="locIcon">
+                <img src="style/icons/bxs-map.svg" alt="Lokalizacja" />
+              </div>
+              <h3>Sośnica</h3>
+            </div>
+            <div class="locType">
+              <div class="catIcon">
+                <img src="style/icons/bxs-landmark.svg" alt="Lokalizacja" />
+              </div>
+              <h3>Obiekt historyczny</h3>
+            </div>
           </div>
-        </div>
-        <div class="sidePropSecondInfo">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
-            reiciendis dicta dolor praesentium perferendis nostrum accusantium
-            impedit error adipisci. Vitae quas rem delectus repellendus
-            voluptatibus.
-          </p>
-        </div>
-        <div class="photoGallery">
-          <div class="pic">
-            <img src="style/photos/20211021_102057.jpg" alt="Sośnica" />
+          <div class="sidePropSecondInfo">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Asperiores
+            </p>
           </div>
-          <div class="pic">
-            <img src="style/photos/20211021_102442.jpg" alt="Sośnica" />
-          </div>
-          <div class="pic">
-            <img src="style/photos/20211021_134927.jpg" alt="Sośnica" />
-          </div>
+          <div class="photoGallery">
+            <div class="pic">
+              <img src="style/photos/20211021_102057.jpg" alt="Sośnica" />
+            </div>
+            <div class="pic">
+              <img src="style/photos/20211021_102442.jpg" alt="Sośnica" />
+            </div>
+            <div class="pic">
+              <img src="style/photos/20211021_134927.jpg" alt="Sośnica" />
+            </div>
+          </div> -->
         </div>
       </div>
     </div>
-    <div id="map" onclick="closeNav(), closeAbtMap(), closeContact()"></div>
     <div id="abtMap" class="rightSidebar">
       <div class="rightSidebarContent">
         <div class="rightSidebarClose">
           <h2>O mapie</h2>
           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-            >&times;</a
+          >&times;</a
           >
         </div>
-
+        
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio eaque
           labore recusandae iste velit consequatur, nihil repellendus repellat
@@ -125,7 +120,7 @@
         <div class="rightSidebarClose">
           <h2>Kontakt</h2>
           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-            >&times;</a
+          >&times;</a
           >
         </div>
         <p>
@@ -138,5 +133,6 @@
         </p>
       </div>
     </div>
+    <div id="map" onclick="closeNav(), closeAbtMap(), closeContact()"></div>
   </body>
-</html>
+  </html>

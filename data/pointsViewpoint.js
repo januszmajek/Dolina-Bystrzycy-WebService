@@ -11,10 +11,26 @@ const pointsView = {
       properties: {
         name: "Plaża nad Zalewem Mietkowskim",
         icon: "viewpointMarker",
-        category: "viewpoint",
+        category: "Punkt widokowy",
         place: "Borzygniew",
         tags: "punkt widokowy • otwarta przestrzeń",
         mainPhoto: "style/photos/viewPhoto1.jpg",
+        description:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis obcaecati cum pariatur accusantium numquam, magni hic, eos ipsa laborum sequi suscipit voluptatibus eius molestias voluptatem nulla molestiae officia laudantium nemo aliquid ipsum sunt, corrupti doloribus ab. In vitae velit laudantium fuga nisi, possimus non. Explicabo error saepe delectus necessitatibus natus.",
+        media: [
+          "./style/photos/other_photos/plaza/20211021_134755.jpg",
+          "./style/photos/other_photos/plaza/20211021_134814.jpg",
+          "./style/photos/other_photos/plaza/20211021_134825.jpg",
+          "./style/photos/other_photos/plaza/20211021_134834.jpg",
+          "./style/photos/other_photos/plaza/20211021_134846.jpg",
+          "./style/photos/other_photos/plaza/20211021_134908.jpg",
+          "./style/photos/other_photos/plaza/20211021_134921.jpg",
+          "./style/photos/other_photos/plaza/20211021_134927.jpg",
+          "./style/photos/other_photos/plaza/20211021_135013.jpg",
+          "./style/photos/other_photos/plaza/20211021_135036.jpg",
+          "./style/photos/other_photos/plaza/20211021_135038.jpg",
+          "./style/photos/other_photos/plaza/20211021_135117.jpg",
+        ],
       },
       geometry: {
         type: "Point",
@@ -26,10 +42,17 @@ const pointsView = {
       properties: {
         name: "Wał na tamie ",
         icon: "viewpointMarker",
-        category: "viewpoint",
+        category: "Punkt widokowy",
         place: "Mietków",
         tags: "punkt widokowy • otwarta przestrzeń",
         mainPhoto: "style/photos/viewPhoto2.jpg",
+        description:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis obcaecati cum pariatur accusantium numquam, magni hic, eos ipsa laborum sequi suscipit voluptatibus eius molestias voluptatem nulla molestiae officia laudantium nemo aliquid ipsum sunt, corrupti doloribus ab. In vitae velit laudantium fuga nisi, possimus non. Explicabo error saepe delectus necessitatibus natus.",
+        media: [
+          "./style/photos/other_photos/wal/20211021_140850.jpg",
+          "./style/photos/other_photos/wal/20211021_140852.jpg",
+          "./style/photos/other_photos/wal/20211021_140908.jpg",
+        ],
       },
       geometry: {
         type: "Point",
@@ -41,10 +64,17 @@ const pointsView = {
       properties: {
         name: "Kładka w Parku Staromiejskim",
         icon: "viewpointMarker",
-        category: "viewpoint",
+        category: "Punkt widokowy",
         place: "Kąty Wrocławskie",
         tags: "punkt widokowy • otwarta przestrzeń",
         mainPhoto: "style/photos/viewPhoto3.jpg",
+        description:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis obcaecati cum pariatur accusantium numquam, magni hic, eos ipsa laborum sequi suscipit voluptatibus eius molestias voluptatem nulla molestiae officia laudantium nemo aliquid ipsum sunt, corrupti doloribus ab. In vitae velit laudantium fuga nisi, possimus non. Explicabo error saepe delectus necessitatibus natus.",
+        media: [
+          "./style/photos/other_photos/kladka_w_parku/20211021_120535.jpg",
+          "./style/photos/other_photos/kladka_w_parku/20211021_120544.jpg",
+          "./style/photos/other_photos/kladka_w_parku/20211021_120552.jpg",
+        ],
       },
       geometry: {
         type: "Point",
@@ -56,10 +86,15 @@ const pointsView = {
       properties: {
         name: "Mostek w Parku Staromiejskim",
         icon: "viewpointMarker",
-        category: "viewpoint",
+        category: "Punkt widokowy",
         place: "Kąty Wrocławskie",
         tags: "punkt widokowy • otwarta przestrzeń",
         mainPhoto: "style/photos/viewPhoto4.jpg",
+        description:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis obcaecati cum pariatur accusantium numquam, magni hic, eos ipsa laborum sequi suscipit voluptatibus eius molestias voluptatem nulla molestiae officia laudantium nemo aliquid ipsum sunt, corrupti doloribus ab. In vitae velit laudantium fuga nisi, possimus non. Explicabo error saepe delectus necessitatibus natus.",
+        media: [
+          "./style/photos/other_photos/mostek_w_parku/20211021_120935.jpg",
+        ],
       },
       geometry: {
         type: "Point",
@@ -71,10 +106,16 @@ const pointsView = {
       properties: {
         name: "Kładka na Bystrzycy",
         icon: "viewpointMarker",
-        category: "viewpoint",
+        category: "Punkt widokowy",
         place: "Kąty wrocławskie",
         tags: "punkt widokowy • otwarta przestrzeń",
         mainPhoto: "style/photos/viewPhoto5.jpg",
+        description:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis obcaecati cum pariatur accusantium numquam, magni hic, eos ipsa laborum sequi suscipit voluptatibus eius molestias voluptatem nulla molestiae officia laudantium nemo aliquid ipsum sunt, corrupti doloribus ab. In vitae velit laudantium fuga nisi, possimus non. Explicabo error saepe delectus necessitatibus natus.",
+        media: [
+          "./style/photos/other_photos/kladka_na_bystrzycy/20211021_121536.jpg",
+          "./style/photos/other_photos/kladka_na_bystrzycy/20211021_121642.jpg",
+        ],
       },
       geometry: {
         type: "Point",
@@ -86,10 +127,18 @@ const pointsView = {
       properties: {
         name: "Widok na Bystrzycę",
         icon: "viewpointMarker",
-        category: "viewpoint",
+        category: "Punkt widokowy",
         place: "Kąty Wrocławskie",
         tags: "punkt widokowy • otwarta przestrzeń",
         mainPhoto: "style/photos/viewPhoto6.jpg",
+        description:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis obcaecati cum pariatur accusantium numquam, magni hic, eos ipsa laborum sequi suscipit voluptatibus eius molestias voluptatem nulla molestiae officia laudantium nemo aliquid ipsum sunt, corrupti doloribus ab. In vitae velit laudantium fuga nisi, possimus non. Explicabo error saepe delectus necessitatibus natus.",
+        media: [
+          "./style/photos/other_photos/widok_na_bystrzyce/20211021_122131.jpg",
+          "./style/photos/other_photos/widok_na_bystrzyce/20211021_122142.jpg",
+          "./style/photos/other_photos/widok_na_bystrzyce/20211021_122156.jpg",
+          "./style/photos/other_photos/widok_na_bystrzyce/20211021_122201.jpg",
+        ],
       },
       geometry: {
         type: "Point",
@@ -101,10 +150,17 @@ const pointsView = {
       properties: {
         name: "Zbiornik wodny w Proszkowicach",
         icon: "viewpointMarker",
-        category: "viewpoint",
+        category: "Punkt widokowy",
         place: "Proszkowice",
         tags: "punkt widokowy • otwarta przestrzeń",
         mainPhoto: "style/photos/viewPhoto7.jpg",
+        description:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis obcaecati cum pariatur accusantium numquam, magni hic, eos ipsa laborum sequi suscipit voluptatibus eius molestias voluptatem nulla molestiae officia laudantium nemo aliquid ipsum sunt, corrupti doloribus ab. In vitae velit laudantium fuga nisi, possimus non. Explicabo error saepe delectus necessitatibus natus.",
+        media: [
+          "./style/photos/other_photos/proszkowice_zbiornik/20211021_144925.jpg",
+          "./style/photos/other_photos/proszkowice_zbiornik/20211021_144929.jpg",
+          "./style/photos/other_photos/proszkowice_zbiornik/20211021_144951.jpg",
+        ],
       },
       geometry: {
         type: "Point",

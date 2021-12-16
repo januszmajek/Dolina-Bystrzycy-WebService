@@ -11,10 +11,16 @@ const pointsInfo = {
       properties: {
         name: "Kultura i historia Doliny Bystrzycy",
         icon: "infoMarker",
-        category: "info",
+        category: "Tablica informacyjna",
         place: "Małkowice",
         tags: "tablica informacyjna • otwarta przestrzeń",
         mainPhoto: "style/photos/infoPhoto1.jpg",
+        description:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis obcaecati cum pariatur accusantium numquam, magni hic, eos ipsa laborum sequi suscipit voluptatibus eius molestias voluptatem nulla molestiae officia laudantium nemo aliquid ipsum sunt, corrupti doloribus ab. In vitae velit laudantium fuga nisi, possimus non. Explicabo error saepe delectus necessitatibus natus.",
+        media: [
+          "./style/photos/other_photos/malkowice_info/20211021_111937.jpg",
+          "./style/photos/other_photos/malkowice_info/20211021_111943.jpg",
+        ],
       },
       geometry: {
         type: "Point",
@@ -26,10 +32,15 @@ const pointsInfo = {
       properties: {
         name: "Stoszyce",
         icon: "infoMarker",
-        category: "info",
+        category: "Tablica informacyjna",
         place: "Stoszyce",
         tags: "tablica informacyjna • otwarta przestrzeń",
         mainPhoto: "style/photos/infoPhoto2.jpg",
+        description:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis obcaecati cum pariatur accusantium numquam, magni hic, eos ipsa laborum sequi suscipit voluptatibus eius molestias voluptatem nulla molestiae officia laudantium nemo aliquid ipsum sunt, corrupti doloribus ab. In vitae velit laudantium fuga nisi, possimus non. Explicabo error saepe delectus necessitatibus natus.",
+        media: [
+          "./style/photos/other_photos/stoszyce_info/20211021_110312.jpg",
+        ],
       },
       geometry: {
         type: "Point",
@@ -41,10 +52,15 @@ const pointsInfo = {
       properties: {
         name: "Nasadzenia w Parku Staromiejskim",
         icon: "infoMarker",
-        category: "info",
+        category: "Tablica informacyjna",
         place: "Kąty Wrocławskie",
         tags: "tablica informacyjna • otwarta przestrzeń • Park Staromiejski",
         mainPhoto: "style/photos/infoPhoto3.jpg",
+        description:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis obcaecati cum pariatur accusantium numquam, magni hic, eos ipsa laborum sequi suscipit voluptatibus eius molestias voluptatem nulla molestiae officia laudantium nemo aliquid ipsum sunt, corrupti doloribus ab. In vitae velit laudantium fuga nisi, possimus non. Explicabo error saepe delectus necessitatibus natus.",
+        media: [
+          "./style/photos/other_photos/nasadzenia_w_parku/20211021_120307.jpg",
+        ],
       },
       geometry: {
         type: "Point",
@@ -56,10 +72,17 @@ const pointsInfo = {
       properties: {
         name: "Obserwacja Ptaków",
         icon: "infoMarker",
-        category: "info",
+        category: "Tablica informacyjna",
         place: "Kąty Wrocławskie",
         tags: "tablica informacyjna • otwarta przestrzeń • Park Staromiejski",
         mainPhoto: "style/photos/infoPhoto4.jpg",
+        description:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis obcaecati cum pariatur accusantium numquam, magni hic, eos ipsa laborum sequi suscipit voluptatibus eius molestias voluptatem nulla molestiae officia laudantium nemo aliquid ipsum sunt, corrupti doloribus ab. In vitae velit laudantium fuga nisi, possimus non. Explicabo error saepe delectus necessitatibus natus.",
+        media: [
+          "./style/photos/other_photos/obserwacja_ptakow/20211021_120215.jpg",
+          "./style/photos/other_photos/obserwacja_ptakow/20211021_120218.jpg",
+          "./style/photos/other_photos/obserwacja_ptakow/20211021_120219.jpg",
+        ],
       },
       geometry: {
         type: "Point",
@@ -71,10 +94,13 @@ const pointsInfo = {
       properties: {
         name: "Warstwy lasu",
         icon: "infoMarker",
-        category: "info",
+        category: "Tablica informacyjna",
         place: "Kąty Wrocławskie",
         tags: "tablica informacyjna • otwarta przestrzeń • Park Staromiejski",
         mainPhoto: "style/photos/infoPhoto5.jpg",
+        description:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis obcaecati cum pariatur accusantium numquam, magni hic, eos ipsa laborum sequi suscipit voluptatibus eius molestias voluptatem nulla molestiae officia laudantium nemo aliquid ipsum sunt, corrupti doloribus ab. In vitae velit laudantium fuga nisi, possimus non. Explicabo error saepe delectus necessitatibus natus.",
+        media: ["./style/photos/other_photos/warstwy_lasu/20211021_120630.jpg"],
       },
       geometry: {
         type: "Point",
@@ -86,10 +112,13 @@ const pointsInfo = {
       properties: {
         name: "Dziuple",
         icon: "infoMarker",
-        category: "info",
+        category: "Tablica informacyjna",
         place: "Kąty Wrocławskie",
         tags: "tablica informacyjna • otwarta przestrzeń • Park Staromiejski",
         mainPhoto: "style/photos/infoPhoto6.jpg",
+        description:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis obcaecati cum pariatur accusantium numquam, magni hic, eos ipsa laborum sequi suscipit voluptatibus eius molestias voluptatem nulla molestiae officia laudantium nemo aliquid ipsum sunt, corrupti doloribus ab. In vitae velit laudantium fuga nisi, possimus non. Explicabo error saepe delectus necessitatibus natus.",
+        media: ["./style/photos/other_photos/dziuple/20211021_120710.jpg"],
       },
       geometry: {
         type: "Point",
@@ -101,10 +130,15 @@ const pointsInfo = {
       properties: {
         name: "Żaba moczarowa",
         icon: "infoMarker",
-        category: "info",
+        category: "Tablica informacyjna",
         place: "Kąty Wrocławskie",
         tags: "tablica informacyjna • otwarta przestrzeń • Park Staromiejski",
         mainPhoto: "style/photos/infoPhoto7.jpg",
+        description:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis obcaecati cum pariatur accusantium numquam, magni hic, eos ipsa laborum sequi suscipit voluptatibus eius molestias voluptatem nulla molestiae officia laudantium nemo aliquid ipsum sunt, corrupti doloribus ab. In vitae velit laudantium fuga nisi, possimus non. Explicabo error saepe delectus necessitatibus natus.",
+        media: [
+          "./style/photos/other_photos/zaba_moczarowa/20211021_120959.jpg",
+        ],
       },
       geometry: {
         type: "Point",
@@ -116,10 +150,13 @@ const pointsInfo = {
       properties: {
         name: "Budki lęgowe i rozrodcze",
         icon: "infoMarker",
-        category: "info",
+        category: "Tablica informacyjna",
         place: "Kąty Wrocławskie",
         tags: "tablica informacyjna • otwarta przestrzeń • Park Staromiejski",
         mainPhoto: "style/photos/infoPhoto8.jpg",
+        description:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis obcaecati cum pariatur accusantium numquam, magni hic, eos ipsa laborum sequi suscipit voluptatibus eius molestias voluptatem nulla molestiae officia laudantium nemo aliquid ipsum sunt, corrupti doloribus ab. In vitae velit laudantium fuga nisi, possimus non. Explicabo error saepe delectus necessitatibus natus.",
+        media: ["./style/photos/other_photos/budki_legowe/20211021_120758.jpg"],
       },
       geometry: {
         type: "Point",
@@ -131,10 +168,16 @@ const pointsInfo = {
       properties: {
         name: "Nietoperze (Park Staromiejski)",
         icon: "infoMarker",
-        category: "info",
+        category: "Tablica informacyjna",
         place: "Kąty Wrocławskie",
         tags: "tablica informacyjna • otwarta przestrzeń • Park Staromiejski",
         mainPhoto: "style/photos/infoPhoto9.jpg",
+        description:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis obcaecati cum pariatur accusantium numquam, magni hic, eos ipsa laborum sequi suscipit voluptatibus eius molestias voluptatem nulla molestiae officia laudantium nemo aliquid ipsum sunt, corrupti doloribus ab. In vitae velit laudantium fuga nisi, possimus non. Explicabo error saepe delectus necessitatibus natus.",
+        media: [
+          "./style/photos/other_photos/nietoperze_park/20211021_121249.jpg",
+          "./style/photos/other_photos/nietoperze_park/20211021_121156.jpg",
+        ],
       },
       geometry: {
         type: "Point",
@@ -146,10 +189,13 @@ const pointsInfo = {
       properties: {
         name: "Grab",
         icon: "infoMarker",
-        category: "info",
+        category: "Tablica informacyjna",
         place: "Kąty Wrocławskie",
         tags: "tablica informacyjna • otwarta przestrzeń • Park Staromiejski",
         mainPhoto: "style/photos/infoPhoto10.jpg",
+        description:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis obcaecati cum pariatur accusantium numquam, magni hic, eos ipsa laborum sequi suscipit voluptatibus eius molestias voluptatem nulla molestiae officia laudantium nemo aliquid ipsum sunt, corrupti doloribus ab. In vitae velit laudantium fuga nisi, possimus non. Explicabo error saepe delectus necessitatibus natus.",
+        media: ["./style/photos/other_photos/grab_info/20211021_121305.jpg"],
       },
       geometry: {
         type: "Point",
@@ -161,10 +207,15 @@ const pointsInfo = {
       properties: {
         name: "Park Krajobrazowy",
         icon: "infoMarker",
-        category: "info",
+        category: "Tablica informacyjna",
         place: "Kąty Wrocławskie",
         tags: "tablica informacyjna • otwarta przestrzeń • Park Staromiejski",
         mainPhoto: "style/photos/infoPhoto11.jpg",
+        description:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis obcaecati cum pariatur accusantium numquam, magni hic, eos ipsa laborum sequi suscipit voluptatibus eius molestias voluptatem nulla molestiae officia laudantium nemo aliquid ipsum sunt, corrupti doloribus ab. In vitae velit laudantium fuga nisi, possimus non. Explicabo error saepe delectus necessitatibus natus.",
+        media: [
+          "./style/photos/other_photos/park_krajobrazowy/20211021_121436. jpg",
+        ],
       },
       geometry: {
         type: "Point",
@@ -176,10 +227,20 @@ const pointsInfo = {
       properties: {
         name: "Drzewa",
         icon: "infoMarker",
-        category: "info",
+        category: "Tablica informacyjna",
         place: "Kąty Wrocławskie",
         tags: "tablica informacyjna • otwarta przestrzeń • Park Staromiejski",
         mainPhoto: "style/photos/infoPhoto12.jpg",
+        description:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis obcaecati cum pariatur accusantium numquam, magni hic, eos ipsa laborum sequi suscipit voluptatibus eius molestias voluptatem nulla molestiae officia laudantium nemo aliquid ipsum sunt, corrupti doloribus ab. In vitae velit laudantium fuga nisi, possimus non. Explicabo error saepe delectus necessitatibus natus.",
+        media: [
+          "./style/photos/other_photos/drzewa/20211021_123123.jpg",
+          "./style/photos/other_photos/drzewa/20211021_123149.jpg",
+          "./style/photos/other_photos/drzewa/20211021_123203.jpg",
+          "./style/photos/other_photos/drzewa/20211021_123221.jpg",
+          "./style/photos/other_photos/drzewa/20211021_123245.jpg",
+          "./style/photos/other_photos/drzewa/20211021_123319.jpg",
+        ],
       },
       geometry: {
         type: "Point",
@@ -191,10 +252,13 @@ const pointsInfo = {
       properties: {
         name: 'Ryby "podwodni łowcy"',
         icon: "infoMarker",
-        category: "info",
+        category: "Tablica informacyjna",
         place: "Kąty Wrocławskie",
         tags: "tablica informacyjna • otwarta przestrzeń • Park Staromiejski",
         mainPhoto: "style/photos/infoPhoto13.jpg",
+        description:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis obcaecati cum pariatur accusantium numquam, magni hic, eos ipsa laborum sequi suscipit voluptatibus eius molestias voluptatem nulla molestiae officia laudantium nemo aliquid ipsum sunt, corrupti doloribus ab. In vitae velit laudantium fuga nisi, possimus non. Explicabo error saepe delectus necessitatibus natus.",
+        media: ["./style/photos/other_photos/ryby_lowcy/20211021_122220.jpg"],
       },
       geometry: {
         type: "Point",
@@ -206,10 +270,13 @@ const pointsInfo = {
       properties: {
         name: 'Ryby "w krainie lipienia"',
         icon: "infoMarker",
-        category: "info",
+        category: "Tablica informacyjna",
         place: "Kąty Wrocławskie",
         tags: "tablica informacyjna • otwarta przestrzeń • Park Staromiejski",
         mainPhoto: "style/photos/infoPhoto14.jpg",
+        description:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis obcaecati cum pariatur accusantium numquam, magni hic, eos ipsa laborum sequi suscipit voluptatibus eius molestias voluptatem nulla molestiae officia laudantium nemo aliquid ipsum sunt, corrupti doloribus ab. In vitae velit laudantium fuga nisi, possimus non. Explicabo error saepe delectus necessitatibus natus.",
+        media: ["./style/photos/other_photos/ryby_kraina/20211021_122414.jpg"],
       },
       geometry: {
         type: "Point",
@@ -221,10 +288,13 @@ const pointsInfo = {
       properties: {
         name: "Las mieszany",
         icon: "infoMarker",
-        category: "info",
+        category: "Tablica informacyjna",
         place: "Kąty Wrocławskie",
         tags: "tablica informacyjna • otwarta przestrzeń • Park Staromiejski",
         mainPhoto: "style/photos/infoPhoto15.jpg",
+        description:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis obcaecati cum pariatur accusantium numquam, magni hic, eos ipsa laborum sequi suscipit voluptatibus eius molestias voluptatem nulla molestiae officia laudantium nemo aliquid ipsum sunt, corrupti doloribus ab. In vitae velit laudantium fuga nisi, possimus non. Explicabo error saepe delectus necessitatibus natus.",
+        media: ["./style/photos/other_photos/las_mieszany/20211021_122846.jpg"],
       },
       geometry: {
         type: "Point",
@@ -236,10 +306,15 @@ const pointsInfo = {
       properties: {
         name: "Zespół dworsko-gospodarczym w Domanicach",
         icon: "infoMarker",
-        category: "info",
+        category: "Tablica informacyjna",
         place: "Domanice",
         tags: "tablica informacyjna • otwarta przestrzeń",
         mainPhoto: "style/photos/infoPhoto16.jpg",
+        description:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis obcaecati cum pariatur accusantium numquam, magni hic, eos ipsa laborum sequi suscipit voluptatibus eius molestias voluptatem nulla molestiae officia laudantium nemo aliquid ipsum sunt, corrupti doloribus ab. In vitae velit laudantium fuga nisi, possimus non. Explicabo error saepe delectus necessitatibus natus.",
+        media: [
+          "./style/photos/other_photos/domanice_info/20211021_142048.jpg",
+        ],
       },
       geometry: {
         type: "Point",
@@ -251,10 +326,15 @@ const pointsInfo = {
       properties: {
         name: "Nietoperze (Samotwór)",
         icon: "infoMarker",
-        category: "info",
+        category: "Tablica informacyjna",
         place: "Samotwór",
         tags: "tablica informacyjna • otwarta przestrzeń",
         mainPhoto: "style/photos/infoPhoto17.jpg",
+        description:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis obcaecati cum pariatur accusantium numquam, magni hic, eos ipsa laborum sequi suscipit voluptatibus eius molestias voluptatem nulla molestiae officia laudantium nemo aliquid ipsum sunt, corrupti doloribus ab. In vitae velit laudantium fuga nisi, possimus non. Explicabo error saepe delectus necessitatibus natus.",
+        media: [
+          "./style/photos/other_photos/nietoperze_samotwor/20211021_121156.jpg",
+        ],
       },
       geometry: {
         type: "Point",
@@ -266,10 +346,17 @@ const pointsInfo = {
       properties: {
         name: "Informacje o Gałowie",
         icon: "infoMarker",
-        category: "info",
+        category: "Tablica informacyjna",
         place: "Gałów",
         tags: "tablica informacyjna • otwarta przestrzeń",
         mainPhoto: "style/photos/infoPhoto18.jpg",
+        description:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis obcaecati cum pariatur accusantium numquam, magni hic, eos ipsa laborum sequi suscipit voluptatibus eius molestias voluptatem nulla molestiae officia laudantium nemo aliquid ipsum sunt, corrupti doloribus ab. In vitae velit laudantium fuga nisi, possimus non. Explicabo error saepe delectus necessitatibus natus.",
+        media: [
+          "./style/photos/other_photos/galow_info/20211021_103707.jpg",
+          "./style/photos/other_photos/galow_info/20211021_103718.jpg",
+          "./style/photos/other_photos/galow_info/20211021_103722.jpg",
+        ],
       },
       geometry: {
         type: "Point",
