@@ -175,7 +175,6 @@ const pointsInfo = {
         description:
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis obcaecati cum pariatur accusantium numquam, magni hic, eos ipsa laborum sequi suscipit voluptatibus eius molestias voluptatem nulla molestiae officia laudantium nemo aliquid ipsum sunt, corrupti doloribus ab. In vitae velit laudantium fuga nisi, possimus non. Explicabo error saepe delectus necessitatibus natus.",
         media: [
-          "./style/photos/other_photos/nietoperze_park/20211021_121249.jpg",
           "./style/photos/other_photos/nietoperze_park/20211021_121156.jpg",
         ],
       },

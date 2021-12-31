@@ -118,7 +118,7 @@ body {
 }
 .sideProp {
   width: 0px;
-  height: 82vh;
+  height: 100%;
   position: fixed;
   z-index: 1;
   left: 0;
@@ -182,7 +182,7 @@ body {
   flex-wrap: wrap;
   justify-content: flex-start;
   gap: 16px 16px;
-  margin: 16px 25px 16px 25px;
+  margin: 16px 25px 27vh 25px;
 }
 .pic {
   display: flex;
@@ -230,7 +230,10 @@ body {
 .rightSidebarClose {
   display: flex;
 }
-/* tylko dla viewpointów */
+.bike-road {
+  display: none;
+}
+/* only for viewpointów */
 /* .catIcon {
   padding-top: 3px;
 } */

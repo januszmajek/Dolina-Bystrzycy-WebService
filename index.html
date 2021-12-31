@@ -88,7 +88,7 @@
       <div class="rightSidebarContent">
         <div class="rightSidebarClose">
           <h2>O mapie</h2>
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav(), closeAbtMap()"
           >&times;</a
           >
         </div>
@@ -119,7 +119,7 @@
       <div class="rightSidebarContent">
         <div class="rightSidebarClose">
           <h2>Kontakt</h2>
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav(), closeContact()"
           >&times;</a
           >
         </div>
@@ -133,6 +133,6 @@
         </p>
       </div>
     </div>
-    <div id="map" onclick="closeNav(), closeAbtMap(), closeContact()"></div>
+    <div id="map" onclick="closeAbtMap(), closeContact()"></div>
   </body>
   </html>

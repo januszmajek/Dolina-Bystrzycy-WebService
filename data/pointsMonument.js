@@ -21,7 +21,6 @@ const pointsMonument = {
           "./style/photos/other_photos/sosnica_palace/20211021_114845.jpg",
           "./style/photos/other_photos/sosnica_palace/20211021_114913.jpg",
           "./style/photos/other_photos/sosnica_palace/20211021_114956.jpg",
-          "./style/photos/other_photos/sosnica_palace/20211021_115000.jpg",
           "./style/photos/other_photos/sosnica_palace/20211021_115031.jpg",
         ],
       },
@@ -42,7 +41,6 @@ const pointsMonument = {
         description:
           "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur ipsam dolore cupiditate eos cum ullam suscipit aperiam corrupti eveniet quod, non doloremque nulla quidem? Quam maxime adipisci, ipsam voluptatum perferendis necessitatibus commodi porro. Quis debitis autem cupiditate molestias maiores esse voluptates. Aliquam vero dolor tempora quo incidunt. Voluptatem, nisi at.",
         media: [
-          "./style/photos/other_photos/malkowice_palace/20211021_112548.jpg",
           "./style/photos/other_photos/malkowice_palace/20211021_112549.jpg",
         ],
       },
@@ -120,10 +118,10 @@ const pointsMonument = {
         category: "Obiekt historyczny",
         place: "Sośnica",
         tags: "kościół katolicki • zwiedzanie z zewnątrz (obiekt zamknięty)",
-        mainPhoto: "style/photos/monumentPhoto6.jpg",
+        mainPhoto: "style/icons/bx-camera-off.svg",
         description:
           "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur ipsam dolore cupiditate eos cum ullam suscipit aperiam corrupti eveniet quod, non doloremque nulla quidem? Quam maxime adipisci, ipsam voluptatum perferendis necessitatibus commodi porro. Quis debitis autem cupiditate molestias maiores esse voluptates. Aliquam vero dolor tempora quo incidunt. Voluptatem, nisi at.",
-        media: ["style/photos/monumentPhoto17.jpg"],
+        media: [],
       },
       geometry: {
         type: "Point",
@@ -142,7 +140,6 @@ const pointsMonument = {
         description:
           "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur ipsam dolore cupiditate eos cum ullam suscipit aperiam corrupti eveniet quod, non doloremque nulla quidem? Quam maxime adipisci, ipsam voluptatum perferendis necessitatibus commodi porro. Quis debitis autem cupiditate molestias maiores esse voluptates. Aliquam vero dolor tempora quo incidunt. Voluptatem, nisi at.",
         media: [
-          "./style/photos/other_photos/krobielowice_gate/20211021_152911.jpg",
           "./style/photos/other_photos/krobielowice_gate/20211021_152921.jpg",
         ],
       },
@@ -209,11 +206,8 @@ const pointsMonument = {
         description:
           "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur ipsam dolore cupiditate eos cum ullam suscipit aperiam corrupti eveniet quod, non doloremque nulla quidem? Quam maxime adipisci, ipsam voluptatum perferendis necessitatibus commodi porro. Quis debitis autem cupiditate molestias maiores esse voluptates. Aliquam vero dolor tempora quo incidunt. Voluptatem, nisi at.",
         media: [
-          "./style/photos/other_photos/kamionna_ruins/20211021_130243.jpg",
           "./style/photos/other_photos/kamionna_ruins/20211021_130257.jpg",
-          "./style/photos/other_photos/kamionna_ruins/20211021_130318.jpg",
           "./style/photos/other_photos/kamionna_ruins/20211021_130354.jpg",
-          "./style/photos/other_photos/kamionna_ruins/20211021_130428.jpg",
           "./style/photos/other_photos/kamionna_ruins/20211021_130432.jpg",
         ],
       },
@@ -295,7 +289,6 @@ const pointsMonument = {
         description:
           "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur ipsam dolore cupiditate eos cum ullam suscipit aperiam corrupti eveniet quod, non doloremque nulla quidem? Quam maxime adipisci, ipsam voluptatum perferendis necessitatibus commodi porro. Quis debitis autem cupiditate molestias maiores esse voluptates. Aliquam vero dolor tempora quo incidunt. Voluptatem, nisi at.",
         media: [
-          "./style/photos/other_photos/samotwor_palace/20211021_102324.jpg",
           "./style/photos/other_photos/samotwor_palace/20211021_102343.jpg",
           "./style/photos/other_photos/samotwor_palace/20211021_102410.jpg",
         ],
@@ -319,7 +312,6 @@ const pointsMonument = {
         media: [
           "./style/photos/other_photos/galow_ruins/20211021_104417.jpg",
           "./style/photos/other_photos/galow_ruins/20211021_104508.jpg",
-          "./style/photos/other_photos/galow_ruins/20211021_104524.jpg",
           "./style/photos/other_photos/galow_ruins/20211021_104533.jpg",
         ],
       },
@@ -356,10 +348,10 @@ const pointsMonument = {
         category: "Obiekt historyczny",
         place: "Gałów",
         tags: "kościół katolicki• zwiedzanie z zewnątrz (obiekt zamknięty)",
-        mainPhoto: "style/photos/monumentPhoto17.jpg",
+        mainPhoto: "style/icons/bx-camera-off.svg",
         description:
           "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur ipsam dolore cupiditate eos cum ullam suscipit aperiam corrupti eveniet quod, non doloremque nulla quidem? Quam maxime adipisci, ipsam voluptatum perferendis necessitatibus commodi porro. Quis debitis autem cupiditate molestias maiores esse voluptates. Aliquam vero dolor tempora quo incidunt. Voluptatem, nisi at.",
-        media: ["style/photos/monumentPhoto17.jpg"],
+        media: [],
       },
       geometry: {
         type: "Point",

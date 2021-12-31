@@ -20,14 +20,10 @@ const pointsView = {
         media: [
           "./style/photos/other_photos/plaza/20211021_134755.jpg",
           "./style/photos/other_photos/plaza/20211021_134814.jpg",
-          "./style/photos/other_photos/plaza/20211021_134825.jpg",
           "./style/photos/other_photos/plaza/20211021_134834.jpg",
           "./style/photos/other_photos/plaza/20211021_134846.jpg",
           "./style/photos/other_photos/plaza/20211021_134908.jpg",
-          "./style/photos/other_photos/plaza/20211021_134921.jpg",
           "./style/photos/other_photos/plaza/20211021_134927.jpg",
-          "./style/photos/other_photos/plaza/20211021_135013.jpg",
-          "./style/photos/other_photos/plaza/20211021_135036.jpg",
           "./style/photos/other_photos/plaza/20211021_135038.jpg",
           "./style/photos/other_photos/plaza/20211021_135117.jpg",
         ],
@@ -49,7 +45,6 @@ const pointsView = {
         description:
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis obcaecati cum pariatur accusantium numquam, magni hic, eos ipsa laborum sequi suscipit voluptatibus eius molestias voluptatem nulla molestiae officia laudantium nemo aliquid ipsum sunt, corrupti doloribus ab. In vitae velit laudantium fuga nisi, possimus non. Explicabo error saepe delectus necessitatibus natus.",
         media: [
-          "./style/photos/other_photos/wal/20211021_140850.jpg",
           "./style/photos/other_photos/wal/20211021_140852.jpg",
           "./style/photos/other_photos/wal/20211021_140908.jpg",
         ],

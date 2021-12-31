@@ -55,8 +55,13 @@ const pBorder = L.geoJSON(parkBorder, {
     weight: 3,
   },
 });
-const pBeaver = L.geoJSON(beaverTrail);
-const pBielik = L.geoJSON(bieliksTrail);
+const pBeaver = L.geoJSON(beaverTrail, {
+  style: {
+    color: "#dc9e2b",
+    weight: 3,
+  },
+});
+// const pBielik = L.geoJSON(bieliksTrail);
 pInfo.addTo(map);
 pMonument.addTo(map);
 pView.addTo(map);
@@ -74,15 +79,22 @@ const mapMarkers = {
   "Tablice Informacyjne": pInfo,
   Zabytki: pMonument,
   "Punkty widokowe": pView,
-  "Szlak Bobra": pBeaver,
-  "Szlak Bielika": pBielik,
+  "Edukacyjna ścieżka rowerowa": pBeaver,
+  // "Szlak Bielika": pBielik,
 };
 
 // add layer controller to the map
-L.control.layers(mapLayers, mapMarkers).addTo(map);
-
+const layerController = L.control.layers(mapLayers, mapMarkers);
+layerController.addTo(map);
 // show zoom controller on higher right corner of the map
 map.zoomControl.setPosition("topright");
+
+const beaverName = [beaverTrail.features[0].properties.name];
+const beaverPlace = [beaverTrail.features[0].properties.place];
+const beaverTags = [beaverTrail.features[0].properties.tags];
+const beaverCategory = [beaverTrail.features[0].properties.category];
+const beaverPhoto = ["style/icons/bx-trip.svg"];
+const beaverDescription = [beaverTrail.features[0].properties.description];
 
 const infoNames = pointsInfo.features.map(function (prp) {
   return prp.properties.name;
@@ -199,7 +211,7 @@ const objInfo = idInfo.map(function (f) {
 });
 const rlyMarkers = objMonument.concat(objView, objInfo);
 //not finished
-function addElement(dataName, dataPlace, dataTags, dataPhoto) {
+function addElement(dataName, dataPlace, dataCategory, dataTags, dataPhoto) {
   for (let i = 0; i < dataName.length; i++) {
     //create elements
     const divMenuItem = document.createElement("div");
@@ -210,7 +222,7 @@ function addElement(dataName, dataPlace, dataTags, dataPhoto) {
     const btn = document.createElement("button");
     const imgMain = document.createElement("img");
     // assign class to created elements
-    divMenuItem.classList.add("menu-item");
+    divMenuItem.classList.add("menu-item", dataCategory);
     divMenuItem.id = dataName[i];
     divItemLeft.classList.add("item-left");
     pItemName.classList.add("item-name");
@@ -261,10 +273,16 @@ function addElement(dataName, dataPlace, dataTags, dataPhoto) {
     ].src = dataPhoto[i];
   }
 }
-// dopisac w tagach miejsce wypoczynkowe w viewpointach
-addElement(monumentNames, monumentPlace, monumentTags, monumentPhoto);
-addElement(viewNames, viewPlace, viewTags, viewPhoto);
-addElement(infoNames, infoPlace, infoTags, infoPhoto);
+addElement(
+  monumentNames,
+  monumentPlace,
+  "monument",
+  monumentTags,
+  monumentPhoto
+);
+addElement(viewNames, viewPlace, "view-point", viewTags, viewPhoto);
+addElement(infoNames, infoPlace, "info", infoTags, infoPhoto);
+addElement(beaverName, beaverPlace, "bike-road", beaverTags, beaverPhoto);
 
 function locationDescription(
   dataName,
@@ -366,6 +384,9 @@ function locationDescription(
         break;
       case "Punkt widokowy":
         imgType.src = "style/icons/bxs-camera.svg";
+        break;
+      case "Trasa rowerowa":
+        imgType.src = "style/icons/bx-cycling.svg";
     }
     h3Category.textContent = dataCategory[i];
     pDescription.textContent = dataDescription[i];
@@ -391,6 +412,14 @@ locationDescription(
   infoCategory,
   infoDescription,
   infoMedia
+);
+
+locationDescription(
+  beaverName,
+  beaverPlace,
+  beaverCategory,
+  beaverDescription,
+  [0]
 );
 
 //ZOOM
@@ -444,6 +473,7 @@ bindMarkerPopup(mMonument, pMonument);
 bindMarkerPopup(mView, pView);
 bindMarkerPopup(mInfo, pInfo);
 
+pBeaver.bindPopup("Edukacyjna ścieżka rowerowa");
 // add search filter
 function listFilter() {
   const input = document.getElementById("search");
@@ -471,7 +501,9 @@ function contact() {
 
 /* Set the width of the side navigation to 0 */
 function closeNav() {
-  document.querySelector(".sideProp").style.width = "0";
+  document.querySelectorAll(".sideProp").forEach(function (e) {
+    e.style.width = "0";
+  });
 }
 function closeAbtMap() {
   document.getElementById("abtMap").style.width = "0";
@@ -486,7 +518,6 @@ function closeContact() {
 // }
 
 // x[0].addEventListener("click", testFunction);
-
 const leftButtons = Array.from(
   document.getElementById("sideNav").querySelectorAll(".btn")
 ).map(function (e) {
@@ -519,4 +550,63 @@ clsBtnMenager.forEach(function (e) {
   e[0].addEventListener("click", function () {
     e[1].style.width = "0px";
   });
+});
+
+//sidebar item filter controlled by layer menager
+const monumentItems = document.querySelectorAll(".monument");
+const viewItems = document.querySelectorAll(".view-point");
+const infoItems = document.querySelectorAll(".info");
+const bikeItems = document.querySelectorAll(".bike-road");
+const inputList = document.querySelectorAll(".leaflet-control-layers-selector");
+const inputInfo = inputList[3];
+const inputMonument = inputList[4];
+const inputView = inputList[5];
+const inputBike = inputList[6];
+
+function itemShow(item) {
+  item.forEach(function (e) {
+    e.style.display = "flex";
+  });
+}
+function itemHide(item) {
+  item.forEach(function (e) {
+    e.style.display = "none";
+  });
+}
+inputInfo.addEventListener("change", function () {
+  if (this.checked) {
+    itemShow(infoItems);
+  } else {
+    itemHide(infoItems);
+  }
+});
+inputMonument.addEventListener("change", function () {
+  if (this.checked) {
+    itemShow(monumentItems);
+  } else {
+    itemHide(monumentItems);
+  }
+});
+inputView.addEventListener("change", function () {
+  if (this.checked) {
+    itemShow(viewItems);
+  } else {
+    itemHide(viewItems);
+  }
+});
+inputBike.addEventListener("change", function () {
+  if (this.checked) {
+    itemShow(bikeItems);
+  } else {
+    itemHide(bikeItems);
+  }
+});
+
+pBeaver.bindPopup("Edukacyjna ścieżka rowerowa");
+bikeItems[0].addEventListener("click", function () {
+  map.flyTo([51.084605, 16.804664], 12);
+  map.openPopup(
+    "Edukacyjna ścieżka rowerowa",
+    L.latLng(51.079512227900047, 16.804033219902259)
+  );
 });
