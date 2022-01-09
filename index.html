@@ -20,11 +20,11 @@
   <body>
     <div id="navbar" onclick="closeNav()">
       <h2 id="title-Nav">Park Krajobrazowy Dolina Bystrzycy</h2>
-      <button id="about" class="btn" onclick="abtMap(), closeContact()">
+      <button id="about" class="btn" onclick="abtMap(), closeAbtPark()">
         O mapie
       </button>
-      <button id="contactBtn" class="btn" onclick="contact(), closeAbtMap()">
-        Kontakt
+      <button id="parkBtn" class="btn" onclick="abtPark(), closeAbtMap()">
+        O parku
       </button>
     </div>
     <div id="left-bar">
@@ -40,7 +40,7 @@
       <div
         id="sideNav"
         class="sidebar-menu"
-        onclick="closeAbtMap(), closeContact()"
+        onclick="closeAbtMap(), closeAbtPark()"
       ></div>
       <div id="sideProperity" class="sidebar-menu">
         <!-- <div class="sideProp">
@@ -92,47 +92,43 @@
           >&times;</a
           >
         </div>
-        
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio eaque
-          labore recusandae iste velit consequatur, nihil repellendus repellat
-          saepe quia inventore commodi veritatis ipsam culpa soluta incidunt
-          quaerat porro nemo, eligendi numquam aliquid sit! Amet eum sed rerum,
-          dolores corporis unde accusantium iste distinctio commodi voluptatem
-          nostrum totam odit facilis voluptatum excepturi dolorem quam adipisci
-          error in porro eveniet! Eum, velit. Voluptate commodi iste officia,
-          repellendus laboriosam non illum. Nulla eos explicabo, saepe adipisci
-          non soluta, iure cumque ex nihil debitis quam quidem illo deserunt
-          itaque veniam! Cum quasi mollitia reprehenderit, magni provident rem
-          deserunt dolores illum, hic temporibus consequatur.
-        </p>
-        <h2>Dane z różnych źródeł</h2>
-        <ul>
-          <li><a href="https://boxicons.com/">BoxIcons</a></li>
-          <li><a href="https://boxicons.com/">BoxIcons</a></li>
-          <li><a href="https://boxicons.com/">BoxIcons</a></li>
-          <li><a href="https://boxicons.com/">BoxIcons</a></li>
-        </ul>
+        <div class="rightsidebar-details">
+          <p>
+            Interaktywna Mapa Parku Krajobrazowego "Dolina Bystrzycy" została opracowana w ramach pracy inżynierskiej studenta Janusz Majka z Uniwersytetu Przyrodniczego we Wrocławiu, kierunek geodezja i kartografia na Wydziale Inżynierii Kształtowania Środowiska i Geodezji.
+          </p>
+          <h2>Dane z różnych źródeł</h2>
+          <ul>
+            <li><a href="https://boxicons.com/">BoxIcons</a></li>
+            <li><a href="https://boxicons.com/">BoxIcons</a></li>
+            <li><a href="https://boxicons.com/">BoxIcons</a></li>
+            <li><a href="https://boxicons.com/">BoxIcons</a></li>
+          </ul>
+          <h2>Kontakt</h2>
+          <p>jabuszmajekjm@gmail.com</p>
+        </div>
       </div>
     </div>
-    <div id="contact" class="rightSidebar">
+    <div id="abtPark" class="rightSidebar">
       <div class="rightSidebarContent">
         <div class="rightSidebarClose">
-          <h2>Kontakt</h2>
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav(), closeContact()"
+          <h2>O parku</h2>
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav(), closeAbtPark()"
           >&times;</a
           >
         </div>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam
-          dolorum officia nemo est optio id consectetur odit voluptatibus sit,
-          blanditiis impedit mollitia? Doloribus deleniti voluptatibus ipsam
-          alias accusantium aliquam tempore natus iusto commodi! Quis ducimus
-          voluptate quia beatae voluptatem pariatur, perspiciatis numquam
-          voluptas iure sunt aliquid, amet voluptates? Perspiciatis, molestias.
-        </p>
+        <div class="rightsidebar-details">
+          <p>
+            Park Krajobrazowy „Dolina Bystrzycy” powstał w 1998 r. w celu ochrony doliny rzeki Bystrzycy i jest jednym z dwunastu parków funkcjonujących na obszarze województwa dolnośląskiego. Leży w większości na terenie powiatu wrocławskiego, w obrębie gmin Kąty Wrocławskie, Mietków oraz gminy Sobótka. Obszar chroniony zajmuje łączną powierzchnię 8 570 ha. Park ma kształt wąskiego rogala o długości ok. 33 km i szerokości ok. 1-6 km. Z uwagi na atrakcyjność przyrodniczą i krajobrazową otaczających terenów oraz ze względów logistycznych, granice Parku często wykraczają poza ścisły obszar doliny i obejmują także pas przyległych wysoczyzn.
+          </p>
+          <p>
+            Dolina Bystrzycy charakteryzuje się dużą różnorodnością krajobrazów na stosunkowo małej powierzchni (od krajobrazu rolniczego, po krajobraz typowo leśny). Rosną tu głównie lasy łęgowe i grądy, wśród których występują wartościowe zbiorowiska łąkowe. O wartości tych siedlisk świadczy dodatkowo fakt objęcia ich ochroną w postaci obszarów Natura 2000.  Wśród znajdujących się tu zwierząt na szczególną uwagę zasługują ptaki (aż 188 gatunków). Można tu spotkać między innymi śmieszka, perkoz dwuczuby, gęś zbożowa, rybitwy i mewy. Występują też gatunki rzadko spotykane takie jak bocian czarny, srokosz, kuliczek piskliwy.
+          </p>
+          <p>
+            Występuje tu wiele obiektów mających ogromną wartość ze względu na dziedzictwo kulturowe. Na terenie Parku znajduje się wiele pałaców i dworów. Niestety, choć stanowią one największy walor kulturowy, to wiele z nich jest zniszczonych i zapomnianych. Pałace takie jak te w Krobielowicach czy Samotworze cieszą się większym zainteresowaniem z powodu ich odrestaurowania, jednak te mniej znane ruiny w Domanicach, Gałowie czy Mietkowie również są warte zobaczenia.
+          </p>
+        </div>
       </div>
     </div>
-    <div id="map" onclick="closeAbtMap(), closeContact()"></div>
+    <div id="map" onclick="closeAbtMap(), closeAbtPark()"></div>
   </body>
   </html>

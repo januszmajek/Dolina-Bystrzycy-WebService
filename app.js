@@ -194,8 +194,8 @@ const allMarkersCoords = allMarkers.map(function (prp) {
 const idMonument = Object.entries(pMonument._layers).map(function (e) {
   return e;
 });
-const objMonument = idMonument.map(function (f) {
-  return f[1];
+const objMonument = idMonument.map(function (e) {
+  return e[1];
 });
 const idView = Object.entries(pView._layers).map(function (e) {
   return e;
@@ -340,7 +340,6 @@ function locationDescription(
     pDescription.id = "description" + i;
     const divPhotoGallery = document.createElement("div");
     divPhotoGallery.className = "photoGallery";
-    divPhotoGallery.id = "photoGallery" + i;
     // put elements in correct place
     divSidebarMenu.appendChild(divSideProp);
     divSidebarMenu.appendChild(divSideProp);
@@ -359,15 +358,15 @@ function locationDescription(
     divSideProp.appendChild(divSidePropSecondInfo);
     divSidePropSecondInfo.appendChild(pDescription);
     divSideProp.appendChild(divPhotoGallery);
-    for (let j = 0; j < dataMedia[i].length; j++) {
-      const divPic = document.createElement("div");
-      divPic.className = "pic";
-      const imgMedia = document.createElement("img");
-      // src to photo
-      imgMedia.src = dataMedia[i][j];
-      divPic.appendChild(imgMedia);
-      divPhotoGallery.appendChild(divPic);
-    }
+    // for (let j = 0; j < dataMedia[i].length; j++) {
+    //   const divPic = document.createElement("div");
+    //   divPic.className = "pic";
+    //   const imgMedia = document.createElement("img");
+    //   // src to photo
+    //   imgMedia.src = dataMedia[i][j];
+    //   divPic.appendChild(imgMedia);
+    //   divPhotoGallery.appendChild(divPic);
+    // }
     // add content to elements
     h2ItemName.textContent = dataName[i];
     // converted &time; text to unicode JS \u{D7}
@@ -495,8 +494,8 @@ function listFilter() {
 function abtMap() {
   document.getElementById("abtMap").style.width = "400px";
 }
-function contact() {
-  document.getElementById("contact").style.width = "400px";
+function abtPark() {
+  document.getElementById("abtPark").style.width = "400px";
 }
 
 /* Set the width of the side navigation to 0 */
@@ -508,8 +507,8 @@ function closeNav() {
 function closeAbtMap() {
   document.getElementById("abtMap").style.width = "0";
 }
-function closeContact() {
-  document.getElementById("contact").style.width = "0";
+function closeAbtPark() {
+  document.getElementById("abtPark").style.width = "0";
 }
 
 // enlarge img from gallery on click
@@ -528,24 +527,61 @@ const sideProperities = Array.from(document.querySelectorAll(".sideProp")).map(
     return e;
   }
 );
-function oneArrCreator(a, b, arr) {
+//function creates two elements arrays in one big array with elements from two other arrays (it takes elements with the same indexz)
+function fromTwoToOneArray(a, b, arr) {
   for (let i = 0; i < a.length; i++) {
     arr.push([a[i], b[i]]);
   }
   return arr;
 }
-let arrMenager = oneArrCreator(leftButtons, sideProperities, []);
 
+let arrMenager = fromTwoToOneArray(leftButtons, sideProperities, []);
 arrMenager.forEach(function (e) {
   e[0].addEventListener("click", function () {
     e[1].style.width = "600px";
+  });
+});
+//function creates three elements array in one big array with elements from two other arrays (it takes elements with the same index)
+function fromThreeToOneArray(a, b, c, arr) {
+  for (let i = 0; i < a.length; i++) {
+    arr.push([a[i], b[i], c[i]]);
+  }
+  return arr;
+}
+const allGalleryDivs = Array.from(
+  document.querySelectorAll(".photoGallery")
+).map(function (e) {
+  return e;
+});
+const allElementsMediaList = monumentMedia.concat(viewMedia, infoMedia);
+allElementsMediaList.push([]);
+const arrMediaAdd = fromThreeToOneArray(
+  leftButtons,
+  allElementsMediaList,
+  allGalleryDivs,
+  []
+);
+// adds photos to photoGallery divs
+arrMediaAdd.forEach(function (e) {
+  e[0].addEventListener("click", function () {
+    if (e[2].innerHTML === "") {
+      for (let j = 0; j < e[1].length; j++) {
+        const divPic = document.createElement("div");
+        divPic.className = "pic";
+        const imgMedia = document.createElement("img");
+        // src to photo
+        imgMedia.src = e[1][j];
+        divPic.appendChild(imgMedia);
+        e[2].appendChild(divPic);
+      }
+    }
   });
 });
 
 const closeButtons = Array.from(
   document.querySelector("#sideProperity").querySelectorAll(".closebtn")
 );
-const clsBtnMenager = oneArrCreator(closeButtons, sideProperities, []);
+const clsBtnMenager = fromTwoToOneArray(closeButtons, sideProperities, []);
 clsBtnMenager.forEach(function (e) {
   e[0].addEventListener("click", function () {
     e[1].style.width = "0px";
