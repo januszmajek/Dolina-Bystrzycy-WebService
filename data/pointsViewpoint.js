@@ -16,7 +16,7 @@ const pointsView = {
         tags: "punkt widokowy • otwarta przestrzeń",
         mainPhoto: "style/photos/viewPhoto1.jpg",
         description:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis obcaecati cum pariatur accusantium numquam, magni hic, eos ipsa laborum sequi suscipit voluptatibus eius molestias voluptatem nulla molestiae officia laudantium nemo aliquid ipsum sunt, corrupti doloribus ab. In vitae velit laudantium fuga nisi, possimus non. Explicabo error saepe delectus necessitatibus natus.",
+          "Plaża w Borzygniewie nad zalewem Mietkowskim i okolice to idelne miejsce na wypoczynek. Niedaleko plaży jest parking dla samochodów, Ośrodek Sportów Wodnych i Rekreacji czy bary plażowe.",
         media: [
           "./style/photos/other_photos/plaza/20211021_134755.jpg",
           "./style/photos/other_photos/plaza/20211021_134814.jpg",
@@ -36,14 +36,14 @@ const pointsView = {
     {
       type: "Feature",
       properties: {
-        name: "Wał na tamie ",
+        name: "Zapora wodna",
         icon: "viewpointMarker",
         category: "Punkt widokowy",
         place: "Mietków",
         tags: "punkt widokowy • otwarta przestrzeń",
         mainPhoto: "style/photos/viewPhoto2.jpg",
         description:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis obcaecati cum pariatur accusantium numquam, magni hic, eos ipsa laborum sequi suscipit voluptatibus eius molestias voluptatem nulla molestiae officia laudantium nemo aliquid ipsum sunt, corrupti doloribus ab. In vitae velit laudantium fuga nisi, possimus non. Explicabo error saepe delectus necessitatibus natus.",
+          "Z zapory jest bardzo dobry widok na Zbiornik Mietkowski i najbliższą okolicę. Sam zbiornik ma powierzchnię około 900 ha. Pełni on funkcję retencyjną i rekreacyjną. ",
         media: [
           "./style/photos/other_photos/wal/20211021_140852.jpg",
           "./style/photos/other_photos/wal/20211021_140908.jpg",
@@ -64,7 +64,7 @@ const pointsView = {
         tags: "punkt widokowy • otwarta przestrzeń",
         mainPhoto: "style/photos/viewPhoto3.jpg",
         description:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis obcaecati cum pariatur accusantium numquam, magni hic, eos ipsa laborum sequi suscipit voluptatibus eius molestias voluptatem nulla molestiae officia laudantium nemo aliquid ipsum sunt, corrupti doloribus ab. In vitae velit laudantium fuga nisi, possimus non. Explicabo error saepe delectus necessitatibus natus.",
+          "W parku staromiejskim znajduje się kładka, zktórej jest dobry widok na otaczającą naturę. Obok znajduje się również wiata z ławkami i stołem idealna na odpoczynek.",
         media: [
           "./style/photos/other_photos/kladka_w_parku/20211021_120535.jpg",
           "./style/photos/other_photos/kladka_w_parku/20211021_120544.jpg",
@@ -86,7 +86,7 @@ const pointsView = {
         tags: "punkt widokowy • otwarta przestrzeń",
         mainPhoto: "style/photos/viewPhoto4.jpg",
         description:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis obcaecati cum pariatur accusantium numquam, magni hic, eos ipsa laborum sequi suscipit voluptatibus eius molestias voluptatem nulla molestiae officia laudantium nemo aliquid ipsum sunt, corrupti doloribus ab. In vitae velit laudantium fuga nisi, possimus non. Explicabo error saepe delectus necessitatibus natus.",
+          "Z małego mostu nad wodą często można dostrzec okoliczne zwierzęta, na przykład łabędzie, kaczki czy żaby.",
         media: [
           "./style/photos/other_photos/mostek_w_parku/20211021_120935.jpg",
         ],
@@ -106,7 +106,7 @@ const pointsView = {
         tags: "punkt widokowy • otwarta przestrzeń",
         mainPhoto: "style/photos/viewPhoto5.jpg",
         description:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis obcaecati cum pariatur accusantium numquam, magni hic, eos ipsa laborum sequi suscipit voluptatibus eius molestias voluptatem nulla molestiae officia laudantium nemo aliquid ipsum sunt, corrupti doloribus ab. In vitae velit laudantium fuga nisi, possimus non. Explicabo error saepe delectus necessitatibus natus.",
+          "Z Sośnicy do Kątów Wrocławskich mżna przejśc na skróty poprzez mostek na rzece Bystrzycy znajdujący się w Parku Staromiejskim. Jest z niej dobry widok na rzekę i okoliczną przyrodę.",
         media: [
           "./style/photos/other_photos/kladka_na_bystrzycy/20211021_121536.jpg",
           "./style/photos/other_photos/kladka_na_bystrzycy/20211021_121642.jpg",
@@ -127,7 +127,7 @@ const pointsView = {
         tags: "punkt widokowy • otwarta przestrzeń",
         mainPhoto: "style/photos/viewPhoto6.jpg",
         description:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis obcaecati cum pariatur accusantium numquam, magni hic, eos ipsa laborum sequi suscipit voluptatibus eius molestias voluptatem nulla molestiae officia laudantium nemo aliquid ipsum sunt, corrupti doloribus ab. In vitae velit laudantium fuga nisi, possimus non. Explicabo error saepe delectus necessitatibus natus.",
+          "Miejsce z wiatą, stołami i ławkami do odpoczynku z dobrym widokiem na rzekę Bystrzycę w Parku Staromiejskim",
         media: [
           "./style/photos/other_photos/widok_na_bystrzyce/20211021_122131.jpg",
           "./style/photos/other_photos/widok_na_bystrzyce/20211021_122142.jpg",
@@ -150,7 +150,7 @@ const pointsView = {
         tags: "punkt widokowy • otwarta przestrzeń",
         mainPhoto: "style/photos/viewPhoto7.jpg",
         description:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis obcaecati cum pariatur accusantium numquam, magni hic, eos ipsa laborum sequi suscipit voluptatibus eius molestias voluptatem nulla molestiae officia laudantium nemo aliquid ipsum sunt, corrupti doloribus ab. In vitae velit laudantium fuga nisi, possimus non. Explicabo error saepe delectus necessitatibus natus.",
+          "Zbiornik wodny w Proszkowicach (znany również jako Maniów) jest atrakcyjnym i popularnym miejscem wypoczynkowym okolicznych mieszkańców. Po obydwu stronach jeziora znajdują się parkingi.",
         media: [
           "./style/photos/other_photos/proszkowice_zbiornik/20211021_144925.jpg",
           "./style/photos/other_photos/proszkowice_zbiornik/20211021_144929.jpg",

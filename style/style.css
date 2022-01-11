@@ -245,10 +245,35 @@ body {
 .bike-road {
   display: none;
 }
-/* only for viewpointów */
-/* .catIcon {
-  padding-top: 3px;
-} */
+.backdrop {
+  position: fixed;
+  z-index: 4;
+  background-color: rgba(0, 0, 0, 0.75);
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+.modal {
+  position: absolute;
+  /* display: flex; */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  border-radius: 20px;
+  background-color: white;
+  padding: 1rem;
+  width: 90vh;
+  height: 90vh;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+.modal img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
 #map {
   z-index: 0;
   grid-area: main;

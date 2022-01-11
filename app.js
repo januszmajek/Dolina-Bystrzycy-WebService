@@ -42,7 +42,7 @@ function markerPoint(layerData, urlIcon) {
   });
 }
 
-//adding GEOJSON layers
+//adding GeoJSON layers
 const pInfo = markerPoint(pointsInfo, "style/markers/info_marker.svg");
 const pMonument = markerPoint(
   pointsMonument,
@@ -61,7 +61,6 @@ const pBeaver = L.geoJSON(beaverTrail, {
     weight: 3,
   },
 });
-// const pBielik = L.geoJSON(bieliksTrail);
 pInfo.addTo(map);
 pMonument.addTo(map);
 pView.addTo(map);
@@ -80,7 +79,6 @@ const mapMarkers = {
   Zabytki: pMonument,
   "Punkty widokowe": pView,
   "Edukacyjna ścieżka rowerowa": pBeaver,
-  // "Szlak Bielika": pBielik,
 };
 
 // add layer controller to the map
@@ -210,7 +208,6 @@ const objInfo = idInfo.map(function (f) {
   return f[1];
 });
 const rlyMarkers = objMonument.concat(objView, objInfo);
-//not finished
 function addElement(dataName, dataPlace, dataCategory, dataTags, dataPhoto) {
   for (let i = 0; i < dataName.length; i++) {
     //create elements
@@ -358,15 +355,15 @@ function locationDescription(
     divSideProp.appendChild(divSidePropSecondInfo);
     divSidePropSecondInfo.appendChild(pDescription);
     divSideProp.appendChild(divPhotoGallery);
-    // for (let j = 0; j < dataMedia[i].length; j++) {
-    //   const divPic = document.createElement("div");
-    //   divPic.className = "pic";
-    //   const imgMedia = document.createElement("img");
-    //   // src to photo
-    //   imgMedia.src = dataMedia[i][j];
-    //   divPic.appendChild(imgMedia);
-    //   divPhotoGallery.appendChild(divPic);
-    // }
+    for (let j = 0; j < dataMedia[i].length; j++) {
+      const divPic = document.createElement("div");
+      divPic.className = "pic";
+      // const imgMedia = document.createElement("img");
+      // // src to photo
+      // imgMedia.src = dataMedia[i][j];
+      // divPic.appendChild(imgMedia);
+      divPhotoGallery.appendChild(divPic);
+    }
     // add content to elements
     h2ItemName.textContent = dataName[i];
     // converted &time; text to unicode JS \u{D7}
@@ -446,7 +443,7 @@ pView.on("click", function (e) {
 });
 
 //when one of "menu-item" class divs is clicked, the map zooms to that points marker on the map and displays a popup
-Array.from(document.getElementsByClassName("menu-item")).map(function (
+Array.from(document.getElementsByClassName("menu-item")).forEach(function (
   element
 ) {
   element.addEventListener("click", function () {
@@ -461,18 +458,19 @@ Array.from(document.getElementsByClassName("menu-item")).map(function (
     }
   });
 });
-
 // location name popup after marker click
 function bindMarkerPopup(markerName, markerType) {
   for (let i = 0; i < markerName.length; i++) {
-    Object.values(markerType._layers)[i].bindPopup(markerName[i][0]);
+    let popupBtn = document.createElement("p");
+    popupBtn.innerHTML = markerName[i][0];
+    Object.values(markerType._layers)[i].bindPopup(popupBtn);
   }
 }
 bindMarkerPopup(mMonument, pMonument);
 bindMarkerPopup(mView, pView);
 bindMarkerPopup(mInfo, pInfo);
-
 pBeaver.bindPopup("Edukacyjna ścieżka rowerowa");
+
 // add search filter
 function listFilter() {
   const input = document.getElementById("search");
@@ -489,7 +487,6 @@ function listFilter() {
   });
 }
 //more details about object when "more" button is clicked
-
 // navbar buttons functionality
 function abtMap() {
   document.getElementById("abtMap").style.width = "400px";
@@ -510,11 +507,6 @@ function closeAbtMap() {
 function closeAbtPark() {
   document.getElementById("abtPark").style.width = "0";
 }
-
-// enlarge img from gallery on click
-// function enlImg() {
-//   document.createElement("div");
-// }
 
 // x[0].addEventListener("click", testFunction);
 const leftButtons = Array.from(
@@ -548,6 +540,7 @@ function fromThreeToOneArray(a, b, c, arr) {
   }
   return arr;
 }
+// prepere arrays to merge them to one array
 const allGalleryDivs = Array.from(
   document.querySelectorAll(".photoGallery")
 ).map(function (e) {
@@ -561,18 +554,16 @@ const arrMediaAdd = fromThreeToOneArray(
   allGalleryDivs,
   []
 );
-// adds photos to photoGallery divs
+//adds photos to photoGallery divs
 arrMediaAdd.forEach(function (e) {
   e[0].addEventListener("click", function () {
-    if (e[2].innerHTML === "") {
+    if (e[1].length != 0 && e[2].querySelector(".pic").innerHTML === "") {
       for (let j = 0; j < e[1].length; j++) {
-        const divPic = document.createElement("div");
-        divPic.className = "pic";
+        const findDivPic = e[2].querySelectorAll(".pic")[j];
         const imgMedia = document.createElement("img");
         // src to photo
         imgMedia.src = e[1][j];
-        divPic.appendChild(imgMedia);
-        e[2].appendChild(divPic);
+        findDivPic.appendChild(imgMedia);
       }
     }
   });
@@ -588,6 +579,37 @@ clsBtnMenager.forEach(function (e) {
   });
 });
 
+// big photo shows on screen after click
+let backdrop;
+let modal;
+const allPhotos = document.querySelectorAll(".pic");
+function closeModalHandler() {
+  modal.remove();
+  modal = null;
+
+  backdrop.remove();
+  backdrop = null;
+}
+function showPhoto(src) {
+  if (modal) {
+    return;
+  }
+  modal = document.createElement("div");
+  modal.className = "modal";
+  const modalImg = document.createElement("img");
+  modalImg.src = src;
+  modal.append(modalImg);
+  document.body.append(modal);
+  backdrop = document.createElement("div");
+  backdrop.className = "backdrop";
+  backdrop.addEventListener("click", closeModalHandler);
+  document.body.append(backdrop);
+}
+allPhotos.forEach(function (e) {
+  e.addEventListener("click", function () {
+    showPhoto(e.firstChild.src);
+  });
+});
 //sidebar item filter controlled by layer menager
 const monumentItems = document.querySelectorAll(".monument");
 const viewItems = document.querySelectorAll(".view-point");
@@ -646,3 +668,38 @@ bikeItems[0].addEventListener("click", function () {
     L.latLng(51.079512227900047, 16.804033219902259)
   );
 });
+
+// MAYBE
+// //close sideProp if any of markers is clicked
+// function closeMarkerSideProp(pData) {
+//   pData.addEventListener("click", closeNav);
+// }
+// closeMarkerSideProp(pInfo);
+// closeMarkerSideProp(pMonument);
+// closeMarkerSideProp(pView);
+// closeMarkerSideProp(pBeaver);
+// //tutaj
+// //open sideProp cart with after clicking popup trext
+// function popupToSideProp(pData) {
+//   pData.addEventListener("click", function () {
+//     let currentlyDisplayedPopup = document.querySelector(
+//       ".leaflet-popup-content"
+//     );
+//     currentlyDisplayedPopup.addEventListener("click", function () {
+//       let idCartText = currentlyDisplayedPopup.textContent.replace(/ /g, "-");
+//       document.getElementsByClassName(idCartText)[1].style.width = "600px";
+//       console.log(idCartText);
+//     });
+//   });
+// }
+// popupToSideProp(pInfo);
+// popupToSideProp(pMonument);
+// popupToSideProp(pView);
+// popupToSideProp(pBeaver);
+
+// Array.from(document.querySelectorAll(".pic")).addEventListener(
+//   "clcic",
+//   function () {
+//     console.log(1);
+//   }
+// );

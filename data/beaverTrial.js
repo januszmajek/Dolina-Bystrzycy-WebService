@@ -6,13 +6,13 @@ const beaverTrail = {
     {
       type: "Feature",
       properties: {
-        name: "Dydaktyczna ścieżka rowerowa",
+        name: "Edukacyjna ścieżka rowerowa",
         icon: "bike",
         category: "Trasa rowerowa",
         place: "Dolina Bystrzycy",
         tags: "ścieżka edukacyjna • trasa rowerowa",
         description:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis obcaecati cum pariatur accusantium numquam, magni hic, eos ipsa laborum sequi suscipit voluptatibus eius molestias voluptatem nulla molestiae officia laudantium nemo aliquid ipsum sunt, corrupti doloribus ab. In vitae velit laudantium fuga nisi, possimus non. Explicabo error saepe delectus necessitatibus natus.",
+          "Ścieżka rowerowa utworzona przez Dolnośląski Zespół Parków Krajobrazowych w 2010 r. Trasa biegnie przez Jarnołtów, Gałów, Bogdaszowice, Stoszyce, Wszemiłowice, Kąty Wrocławskie, Sośnicę, Sadowice, Romnów, Małkowice, Skałkę, Samotwór, a następnie zawraca przez Gałów do Jarnołtowa. Po drodze można odpocząć na przystankach z infrastrukturą rowerową (stojakik na rowery, wiata z łąwkami do siedzenia). Trasa ma długośc około 32 km, a pokonanie jej w całości powinno średnio zając do 4 godzin.",
       },
       geometry: {
         type: "MultiLineString",
