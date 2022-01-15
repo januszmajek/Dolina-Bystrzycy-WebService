@@ -685,12 +685,10 @@ const allGalleryDivsForMarkers = Array.from(
 ).map(function (e) {
   return e;
 });
-allGalleryDivsForMarkers.push([], [], [], [], [], [], []);
 const allElementsMediaListForMarkers = monumentMedia.concat(
   viewMedia,
   infoMedia
 );
-allElementsMediaListForMarkers.push([], [], [], [], [], [], [], []);
 const arrMarkersAndPhotos = fromThreeToOneArray(
   pDataMarkersAndNames,
   allElementsMediaListForMarkers,
@@ -700,7 +698,11 @@ const arrMarkersAndPhotos = fromThreeToOneArray(
 arrMarkersAndPhotos.forEach(function (e) {
   e[0][0].addEventListener("click", closeNav);
   e[0][0].addEventListener("click", function () {
-    if (e[1].length != 0 && e[2].querySelector(".pic").innerHTML === "") {
+    if (
+      e[2] !== undefined &&
+      e[1].length != 0 &&
+      e[2].querySelector(".pic").innerHTML === ""
+    ) {
       for (let j = 0; j < e[1].length; j++) {
         const findDivPic = e[2].querySelectorAll(".pic")[j];
         const imgMedia = document.createElement("img");
