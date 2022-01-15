@@ -63,7 +63,7 @@ const beaverTrail = {
     },
     {
       type: "Feature",
-      properties: { nazwa: "2" },
+      properties: { name: "Edukacyjna ścieżka rowerowa" },
       geometry: {
         type: "MultiLineString",
         coordinates: [
@@ -106,7 +106,7 @@ const beaverTrail = {
     },
     {
       type: "Feature",
-      properties: { nazwa: "3" },
+      properties: { name: "Edukacyjna ścieżka rowerowa" },
       geometry: {
         type: "MultiLineString",
         coordinates: [
@@ -127,7 +127,7 @@ const beaverTrail = {
     },
     {
       type: "Feature",
-      properties: { nazwa: "4" },
+      properties: { name: "Edukacyjna ścieżka rowerowa" },
       geometry: {
         type: "MultiLineString",
         coordinates: [
@@ -164,7 +164,7 @@ const beaverTrail = {
     },
     {
       type: "Feature",
-      properties: { nazwa: "5" },
+      properties: { name: "Edukacyjna ścieżka rowerowa" },
       geometry: {
         type: "MultiLineString",
         coordinates: [
@@ -262,7 +262,7 @@ const beaverTrail = {
     },
     {
       type: "Feature",
-      properties: { nazwa: "6" },
+      properties: { name: "Edukacyjna ścieżka rowerowa" },
       geometry: {
         type: "MultiLineString",
         coordinates: [
@@ -304,7 +304,7 @@ const beaverTrail = {
     },
     {
       type: "Feature",
-      properties: { nazwa: "7" },
+      properties: { name: "Edukacyjna ścieżka rowerowa" },
       geometry: {
         type: "MultiLineString",
         coordinates: [
@@ -387,7 +387,7 @@ const beaverTrail = {
     },
     {
       type: "Feature",
-      properties: { nazwa: "8" },
+      properties: { name: "Edukacyjna ścieżka rowerowa" },
       geometry: {
         type: "MultiLineString",
         coordinates: [

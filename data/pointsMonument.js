@@ -312,7 +312,7 @@ const pointsMonument = {
         media: [
           "./style/photos/other_photos/galow_ruins/20211021_104417.jpg",
           "./style/photos/other_photos/galow_ruins/20211021_104508.jpg",
-          "./style/photos/other_photos/galow_ruins/20211021_104533.jpg",
+          "./style/photos/other_photos/galow_ruins/20211021_104524.jpg",
         ],
       },
       geometry: {

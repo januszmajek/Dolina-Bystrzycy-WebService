@@ -42,7 +42,7 @@ function markerPoint(layerData, urlIcon) {
   });
 }
 
-//adding GeoJSON layers
+//adding layers
 const pInfo = markerPoint(pointsInfo, "style/markers/info_marker.svg");
 const pMonument = markerPoint(
   pointsMonument,
@@ -358,10 +358,6 @@ function locationDescription(
     for (let j = 0; j < dataMedia[i].length; j++) {
       const divPic = document.createElement("div");
       divPic.className = "pic";
-      // const imgMedia = document.createElement("img");
-      // // src to photo
-      // imgMedia.src = dataMedia[i][j];
-      // divPic.appendChild(imgMedia);
       divPhotoGallery.appendChild(divPic);
     }
     // add content to elements
@@ -669,37 +665,51 @@ bikeItems[0].addEventListener("click", function () {
   );
 });
 
-// MAYBE
-// //close sideProp if any of markers is clicked
-// function closeMarkerSideProp(pData) {
-//   pData.addEventListener("click", closeNav);
-// }
-// closeMarkerSideProp(pInfo);
-// closeMarkerSideProp(pMonument);
-// closeMarkerSideProp(pView);
-// closeMarkerSideProp(pBeaver);
-// //tutaj
-// //open sideProp cart with after clicking popup trext
-// function popupToSideProp(pData) {
-//   pData.addEventListener("click", function () {
-//     let currentlyDisplayedPopup = document.querySelector(
-//       ".leaflet-popup-content"
-//     );
-//     currentlyDisplayedPopup.addEventListener("click", function () {
-//       let idCartText = currentlyDisplayedPopup.textContent.replace(/ /g, "-");
-//       document.getElementsByClassName(idCartText)[1].style.width = "600px";
-//       console.log(idCartText);
-//     });
-//   });
-// }
-// popupToSideProp(pInfo);
-// popupToSideProp(pMonument);
-// popupToSideProp(pView);
-// popupToSideProp(pBeaver);
+//open sideProp cart with after clicking popup trext
+let pDataMarkersAndNames = [];
+function setData(pData) {
+  Object.keys(pData._layers).map(function (key, index) {
+    return pDataMarkersAndNames.push([
+      pData._layers[key],
+      pData._layers[key].feature.properties.name,
+    ]);
+  });
+}
+setData(pMonument);
+setData(pView);
+setData(pInfo);
+setData(pBeaver);
 
-// Array.from(document.querySelectorAll(".pic")).addEventListener(
-//   "clcic",
-//   function () {
-//     console.log(1);
-//   }
-// );
+const allGalleryDivsForMarkers = Array.from(
+  document.querySelectorAll(".photoGallery")
+).map(function (e) {
+  return e;
+});
+allGalleryDivsForMarkers.push([], [], [], [], [], [], []);
+const allElementsMediaListForMarkers = monumentMedia.concat(
+  viewMedia,
+  infoMedia
+);
+allElementsMediaListForMarkers.push([], [], [], [], [], [], [], []);
+const arrMarkersAndPhotos = fromThreeToOneArray(
+  pDataMarkersAndNames,
+  allElementsMediaListForMarkers,
+  allGalleryDivsForMarkers,
+  []
+);
+arrMarkersAndPhotos.forEach(function (e) {
+  e[0][0].addEventListener("click", closeNav);
+  e[0][0].addEventListener("click", function () {
+    if (e[1].length != 0 && e[2].querySelector(".pic").innerHTML === "") {
+      for (let j = 0; j < e[1].length; j++) {
+        const findDivPic = e[2].querySelectorAll(".pic")[j];
+        const imgMedia = document.createElement("img");
+        // src to photo
+        imgMedia.src = e[1][j];
+        findDivPic.appendChild(imgMedia);
+      }
+    }
+    let idCartText = e[0][1].replace(/ /g, "-");
+    document.getElementsByClassName(idCartText)[1].style.width = "600px";
+  });
+});
