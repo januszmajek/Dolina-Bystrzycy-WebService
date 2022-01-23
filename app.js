@@ -57,7 +57,9 @@ const pBorder = L.geoJSON(parkBorder, {
 });
 const pBeaver = L.geoJSON(beaverTrail, {
   style: {
-    color: "#dc9e2b",
+    color: "#e02525",
+    dashArray: "10 10",
+    dashOffset: "0",
     weight: 3,
   },
 });
