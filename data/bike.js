@@ -1,7 +1,10 @@
-const beaverTrail = {
+const bike = {
   type: "FeatureCollection",
-  name: "nowy",
-  crs: { type: "name", properties: { name: "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+  name: "bike2",
+  crs: {
+    type: "name",
+    properties: { name: "urn:ogc:def:crs:OGC:1.3:CRS84" },
+  },
   features: [
     {
       type: "Feature",
@@ -12,7 +15,7 @@ const beaverTrail = {
         place: "Dolina Bystrzycy",
         tags: "ścieżka edukacyjna • trasa rowerowa",
         description:
-          "Ścieżka rowerowa utworzona przez Dolnośląski Zespół Parków Krajobrazowych w 2010 r. Trasa biegnie przez Jarnołtów, Gałów, Bogdaszowice, Stoszyce, Wszemiłowice, Kąty Wrocławskie, Sośnicę, Sadowice, Romnów, Małkowice, Skałkę, Samotwór, a następnie zawraca przez Gałów do Jarnołtowa. Po drodze można odpocząć na przystankach z infrastrukturą rowerową (stojakik na rowery, wiata z łąwkami do siedzenia). Trasa ma długośc około 32 km, a pokonanie jej w całości powinno średnio zając do 4 godzin.",
+          "Ścieżka rowerowa utworzona przez Dolnośląski Zespół Parków Krajobrazowych w 2010 r. Trasa biegnie przez Jarnołtów, Gałów, Bogdaszowice, Stoszyce, Wszemiłowice, Kąty Wrocławskie, Sośnicę, Sadowice, Romnów, Małkowice, Skałkę, Samotwór, a następnie zawraca przez Gałów do Jarnołtowa. Po drodze można odpocząć na przystankach z infrastrukturą rowerową (stojaki na rowery, wiata z ławkami do siedzenia). Trasa ma długość około 32 km, a pokonanie jej w całości powinno średnio zając do 4 godzin.",
       },
       geometry: {
         type: "MultiLineString",
@@ -34,15 +37,6 @@ const beaverTrail = {
             [16.8443352, 51.1213718],
             [16.8442778, 51.1213983],
           ],
-        ],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { name: "Edukacyjna ścieżka rowerowa" },
-      geometry: {
-        type: "MultiLineString",
-        coordinates: [
           [
             [16.7816144, 51.0755092],
             [16.7815352, 51.0755238],
@@ -97,15 +91,6 @@ const beaverTrail = {
             [16.7785963, 51.0730625],
             [16.7787021, 51.0729964],
           ],
-        ],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { name: "Edukacyjna ścieżka rowerowa" },
-      geometry: {
-        type: "MultiLineString",
-        coordinates: [
           [
             [16.8297527, 51.0965464],
             [16.8296612, 51.0965027],
@@ -116,15 +101,6 @@ const beaverTrail = {
             [16.8288252, 51.0962807],
             [16.8286278, 51.096274],
           ],
-        ],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { name: "Edukacyjna ścieżka rowerowa" },
-      geometry: {
-        type: "MultiLineString",
-        coordinates: [
           [
             [16.7787021, 51.0729964],
             [16.7789971, 51.0728167],
@@ -138,15 +114,6 @@ const beaverTrail = {
             [16.7807372, 51.0712076],
             [16.780758, 51.0711435],
           ],
-        ],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { name: "Edukacyjna ścieżka rowerowa" },
-      geometry: {
-        type: "MultiLineString",
-        coordinates: [
           [
             [16.8208651, 51.0764804],
             [16.8207364, 51.0765038],
@@ -167,28 +134,10 @@ const beaverTrail = {
             [16.8183735, 51.0771059],
             [16.818145, 51.0771656],
           ],
-        ],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { name: "Edukacyjna ścieżka rowerowa" },
-      geometry: {
-        type: "MultiLineString",
-        coordinates: [
           [
             [16.818145, 51.0771656],
             [16.8177595, 51.0772967],
           ],
-        ],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { name: "Edukacyjna ścieżka rowerowa" },
-      geometry: {
-        type: "MultiLineString",
-        coordinates: [
           [
             [16.8040436, 51.0795143],
             [16.8037164, 51.0793023],
@@ -210,15 +159,6 @@ const beaverTrail = {
             [16.8025112, 51.0765101],
             [16.802345, 51.0764457],
           ],
-        ],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { name: "Edukacyjna ścieżka rowerowa" },
-      geometry: {
-        type: "MultiLineString",
-        coordinates: [
           [
             [16.8266672, 51.1188443],
             [16.8258215, 51.1182822],
@@ -243,15 +183,6 @@ const beaverTrail = {
             [16.8163301, 51.1113062],
             [16.816276, 51.1112387],
           ],
-        ],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { name: "Edukacyjna ścieżka rowerowa" },
-      geometry: {
-        type: "MultiLineString",
-        coordinates: [
           [
             [16.8234554, 51.076924],
             [16.8235915, 51.0769695],
@@ -275,15 +206,6 @@ const beaverTrail = {
             [16.8272823, 51.0800593],
             [16.8273859, 51.0801256],
           ],
-        ],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { name: "Edukacyjna ścieżka rowerowa" },
-      geometry: {
-        type: "MultiLineString",
-        coordinates: [
           [
             [16.8327403, 51.0898084],
             [16.832524, 51.0898248],
@@ -311,15 +233,6 @@ const beaverTrail = {
             [16.8287159, 51.0898709],
             [16.8285729, 51.0899236],
           ],
-        ],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { name: "Edukacyjna ścieżka rowerowa" },
-      geometry: {
-        type: "MultiLineString",
-        coordinates: [
           [
             [16.7839043, 51.0603521],
             [16.7837671, 51.0599277],
@@ -352,15 +265,6 @@ const beaverTrail = {
             [16.7757094, 51.0460366],
             [16.7756964, 51.0461355],
           ],
-        ],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { name: "Edukacyjna ścieżka rowerowa" },
-      geometry: {
-        type: "MultiLineString",
-        coordinates: [
           [
             [16.8006815, 51.0539878],
             [16.8004735, 51.054048],
@@ -389,15 +293,6 @@ const beaverTrail = {
             [16.7977723, 51.0580511],
             [16.7976243, 51.0580771],
           ],
-        ],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { name: "Edukacyjna ścieżka rowerowa" },
-      geometry: {
-        type: "MultiLineString",
-        coordinates: [
           [
             [16.8006815, 51.0539878],
             [16.800786, 51.0539248],
@@ -411,43 +306,16 @@ const beaverTrail = {
             [16.8000309, 51.050563],
             [16.8000128, 51.0504467],
           ],
-        ],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { name: "Edukacyjna ścieżka rowerowa" },
-      geometry: {
-        type: "MultiLineString",
-        coordinates: [
           [
             [16.843844, 51.1215814],
             [16.843678, 51.1216233],
             [16.843102, 51.1218235],
             [16.842187, 51.1221567],
           ],
-        ],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { name: "Edukacyjna ścieżka rowerowa" },
-      geometry: {
-        type: "MultiLineString",
-        coordinates: [
           [
             [16.842187, 51.1221567],
             [16.84178, 51.1220508],
           ],
-        ],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { name: "Edukacyjna ścieżka rowerowa" },
-      geometry: {
-        type: "MultiLineString",
-        coordinates: [
           [
             [16.8169723, 51.1082221],
             [16.8168962, 51.1081828],
@@ -477,15 +345,6 @@ const beaverTrail = {
             [16.8139104, 51.1032462],
             [16.8138363, 51.1030327],
           ],
-        ],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { name: "Edukacyjna ścieżka rowerowa" },
-      geometry: {
-        type: "MultiLineString",
-        coordinates: [
           [
             [16.8276972, 51.1037109],
             [16.8276163, 51.1037814],
@@ -505,41 +364,14 @@ const beaverTrail = {
             [16.8174417, 51.1075127],
             [16.8169723, 51.1082221],
           ],
-        ],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { name: "Edukacyjna ścieżka rowerowa" },
-      geometry: {
-        type: "MultiLineString",
-        coordinates: [
           [
             [16.7976243, 51.0580771],
             [16.7971101, 51.0581573],
           ],
-        ],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { name: "Edukacyjna ścieżka rowerowa" },
-      geometry: {
-        type: "MultiLineString",
-        coordinates: [
           [
             [16.7923606, 51.0866167],
             [16.7925104, 51.0865078],
           ],
-        ],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { name: "Edukacyjna ścieżka rowerowa" },
-      geometry: {
-        type: "MultiLineString",
-        coordinates: [
           [
             [16.7979959, 51.0751872],
             [16.7980311, 51.0752438],
@@ -557,15 +389,6 @@ const beaverTrail = {
             [16.802033, 51.0763862],
             [16.802345, 51.0764457],
           ],
-        ],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { name: "Edukacyjna ścieżka rowerowa" },
-      geometry: {
-        type: "MultiLineString",
-        coordinates: [
           [
             [16.811126, 51.0991518],
             [16.810781, 51.0992377],
@@ -625,15 +448,6 @@ const beaverTrail = {
             [16.80139, 51.0896595],
             [16.8014393, 51.0895911],
           ],
-        ],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { name: "Edukacyjna ścieżka rowerowa" },
-      geometry: {
-        type: "MultiLineString",
-        coordinates: [
           [
             [16.792133, 51.0832808],
             [16.7920406, 51.0831565],
@@ -678,15 +492,6 @@ const beaverTrail = {
             [16.780896, 51.0756423],
             [16.7808937, 51.0756219],
           ],
-        ],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { name: "Edukacyjna ścieżka rowerowa" },
-      geometry: {
-        type: "MultiLineString",
-        coordinates: [
           [
             [16.8000128, 51.0504467],
             [16.8000061, 51.0504079],
@@ -717,45 +522,18 @@ const beaverTrail = {
             [16.7953195, 51.0409562],
             [16.7954057, 51.0408502],
           ],
-        ],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { name: "Edukacyjna ścieżka rowerowa" },
-      geometry: {
-        type: "MultiLineString",
-        coordinates: [
           [
             [16.772103, 51.0308735],
             [16.7722528, 51.0308819],
             [16.7727383, 51.0308871],
             [16.7731432, 51.0308905],
           ],
-        ],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { name: "Edukacyjna ścieżka rowerowa" },
-      geometry: {
-        type: "MultiLineString",
-        coordinates: [
           [
             [16.8442778, 51.1213983],
             [16.8441905, 51.1214427],
             [16.8439266, 51.1215617],
             [16.843844, 51.1215814],
           ],
-        ],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { name: "Edukacyjna ścieżka rowerowa" },
-      geometry: {
-        type: "MultiLineString",
-        coordinates: [
           [
             [16.8314371, 51.1030052],
             [16.8314648, 51.1029554],
@@ -787,15 +565,6 @@ const beaverTrail = {
             [16.8321081, 51.1009693],
             [16.8321667, 51.1008402],
           ],
-        ],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { name: "Edukacyjna ścieżka rowerowa" },
-      geometry: {
-        type: "MultiLineString",
-        coordinates: [
           [
             [16.7731432, 51.0308905],
             [16.773313, 51.0309164],
@@ -809,15 +578,6 @@ const beaverTrail = {
             [16.777337, 51.0321346],
             [16.7775357, 51.0321961],
           ],
-        ],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { name: "Edukacyjna ścieżka rowerowa" },
-      geometry: {
-        type: "MultiLineString",
-        coordinates: [
           [
             [16.7939327, 51.062376],
             [16.7938699, 51.0624434],
@@ -887,15 +647,6 @@ const beaverTrail = {
             [16.7978169, 51.0736306],
             [16.7978819, 51.0737141],
           ],
-        ],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { name: "Edukacyjna ścieżka rowerowa" },
-      geometry: {
-        type: "MultiLineString",
-        coordinates: [
           [
             [16.7847969, 51.0336533],
             [16.7846836, 51.0338596],
@@ -987,15 +738,6 @@ const beaverTrail = {
             [16.7901409, 51.0423577],
             [16.7902094, 51.0424761],
           ],
-        ],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { name: "Edukacyjna ścieżka rowerowa" },
-      geometry: {
-        type: "MultiLineString",
-        coordinates: [
           [
             [16.7748033, 51.035953],
             [16.7748466, 51.0360057],
@@ -1046,15 +788,6 @@ const beaverTrail = {
             [16.7812588, 51.0451726],
             [16.7812925, 51.0452234],
           ],
-        ],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { name: "Edukacyjna ścieżka rowerowa" },
-      geometry: {
-        type: "MultiLineString",
-        coordinates: [
           [
             [16.7823401, 51.0322471],
             [16.782628, 51.0323369],
@@ -1065,28 +798,10 @@ const beaverTrail = {
             [16.7836908, 51.0325861],
             [16.7839509, 51.0326025],
           ],
-        ],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { name: "Edukacyjna ścieżka rowerowa" },
-      geometry: {
-        type: "MultiLineString",
-        coordinates: [
           [
             [16.7775357, 51.0321961],
             [16.7778624, 51.0322778],
           ],
-        ],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { name: "Edukacyjna ścieżka rowerowa" },
-      geometry: {
-        type: "MultiLineString",
-        coordinates: [
           [
             [16.7795894, 51.0330254],
             [16.7798833, 51.0330889],
@@ -1105,15 +820,6 @@ const beaverTrail = {
             [16.7819727, 51.0324257],
             [16.7821342, 51.0322889],
           ],
-        ],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { name: "Edukacyjna ścieżka rowerowa" },
-      geometry: {
-        type: "MultiLineString",
-        coordinates: [
           [
             [16.8286278, 51.096274],
             [16.8283896, 51.0962658],
@@ -1170,15 +876,6 @@ const beaverTrail = {
             [16.8286263, 51.0900039],
             [16.8285729, 51.0899236],
           ],
-        ],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { name: "Edukacyjna ścieżka rowerowa" },
-      geometry: {
-        type: "MultiLineString",
-        coordinates: [
           [
             [16.816276, 51.1112387],
             [16.8160192, 51.1108578],
@@ -1192,15 +889,6 @@ const beaverTrail = {
             [16.8154422, 51.110575],
             [16.8153482, 51.110616],
           ],
-        ],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { name: "Edukacyjna ścieżka rowerowa" },
-      geometry: {
-        type: "MultiLineString",
-        coordinates: [
           [
             [16.7812925, 51.0452234],
             [16.7811754, 51.0452648],
@@ -1210,15 +898,6 @@ const beaverTrail = {
             [16.7760388, 51.0460135],
             [16.7758539, 51.0460048],
           ],
-        ],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { name: "Edukacyjna ścieżka rowerowa" },
-      geometry: {
-        type: "MultiLineString",
-        coordinates: [
           [
             [16.8161829, 51.109172],
             [16.8160787, 51.1092521],
@@ -1231,43 +910,16 @@ const beaverTrail = {
             [16.8153533, 51.1105751],
             [16.8153482, 51.110616],
           ],
-        ],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { name: "Edukacyjna ścieżka rowerowa" },
-      geometry: {
-        type: "MultiLineString",
-        coordinates: [
           [
             [16.8162509, 51.1091197],
             [16.8161829, 51.109172],
           ],
-        ],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { name: "Edukacyjna ścieżka rowerowa" },
-      geometry: {
-        type: "MultiLineString",
-        coordinates: [
           [
             [16.8172873, 51.0771872],
             [16.8173246, 51.0772542],
             [16.8173547, 51.0773395],
             [16.8174105, 51.0774125],
           ],
-        ],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { name: "Edukacyjna ścieżka rowerowa" },
-      geometry: {
-        type: "MultiLineString",
-        coordinates: [
           [
             [16.7902094, 51.0424761],
             [16.790573, 51.0424277],
@@ -1294,15 +946,6 @@ const beaverTrail = {
             [16.7951953, 51.0407907],
             [16.7954057, 51.0408502],
           ],
-        ],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { name: "Edukacyjna ścieżka rowerowa" },
-      geometry: {
-        type: "MultiLineString",
-        coordinates: [
           [
             [16.7748033, 51.035953],
             [16.7748493, 51.0358258],
@@ -1326,15 +969,6 @@ const beaverTrail = {
             [16.7751113, 51.0333328],
             [16.7753633, 51.0332898],
           ],
-        ],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { name: "Edukacyjna ścieżka rowerowa" },
-      geometry: {
-        type: "MultiLineString",
-        coordinates: [
           [
             [16.792097, 51.0867201],
             [16.7922761, 51.0870115],
@@ -1358,15 +992,6 @@ const beaverTrail = {
             [16.800769, 51.0894381],
             [16.8014393, 51.0895911],
           ],
-        ],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { name: "Edukacyjna ścieżka rowerowa" },
-      geometry: {
-        type: "MultiLineString",
-        coordinates: [
           [
             [16.8138363, 51.1030327],
             [16.8137918, 51.1029117],
@@ -1385,15 +1010,6 @@ const beaverTrail = {
             [16.811437, 51.0992181],
             [16.811126, 51.0991518],
           ],
-        ],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { name: "Edukacyjna ścieżka rowerowa" },
-      geometry: {
-        type: "MultiLineString",
-        coordinates: [
           [
             [16.8273859, 51.0801256],
             [16.8274442, 51.0802429],
@@ -1416,15 +1032,6 @@ const beaverTrail = {
             [16.8327386, 51.089784],
             [16.8327403, 51.0898084],
           ],
-        ],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { name: "Edukacyjna ścieżka rowerowa" },
-      geometry: {
-        type: "MultiLineString",
-        coordinates: [
           [
             [16.7888334, 51.0756741],
             [16.788736, 51.0756837],
@@ -1444,15 +1051,6 @@ const beaverTrail = {
             [16.7843534, 51.0757209],
             [16.7842589, 51.0757038],
           ],
-        ],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { name: "Edukacyjna ścieżka rowerowa" },
-      geometry: {
-        type: "MultiLineString",
-        coordinates: [
           [
             [16.7719268, 51.0315806],
             [16.7720624, 51.0317007],
@@ -1463,15 +1061,6 @@ const beaverTrail = {
             [16.7724133, 51.0318821],
             [16.772649, 51.0322959],
           ],
-        ],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { name: "Edukacyjna ścieżka rowerowa" },
-      geometry: {
-        type: "MultiLineString",
-        coordinates: [
           [
             [16.84178, 51.1220508],
             [16.8414476, 51.1220254],
@@ -1480,15 +1069,6 @@ const beaverTrail = {
             [16.8403278, 51.1221161],
             [16.8402667, 51.1221254],
           ],
-        ],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { name: "Edukacyjna ścieżka rowerowa" },
-      geometry: {
-        type: "MultiLineString",
-        coordinates: [
           [
             [16.7938509, 51.0753051],
             [16.7938509, 51.0753051],
@@ -1509,28 +1089,10 @@ const beaverTrail = {
             [16.7896496, 51.0756009],
             [16.7888334, 51.0756741],
           ],
-        ],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { name: "Edukacyjna ścieżka rowerowa" },
-      geometry: {
-        type: "MultiLineString",
-        coordinates: [
           [
             [16.8391591, 51.122901],
             [16.8391245, 51.1229365],
           ],
-        ],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { name: "Edukacyjna ścieżka rowerowa" },
-      geometry: {
-        type: "MultiLineString",
-        coordinates: [
           [
             [16.8402667, 51.1221254],
             [16.8401582, 51.1221832],
@@ -1541,15 +1103,6 @@ const beaverTrail = {
             [16.8392241, 51.1228523],
             [16.8391591, 51.122901],
           ],
-        ],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { name: "Edukacyjna ścieżka rowerowa" },
-      geometry: {
-        type: "MultiLineString",
-        coordinates: [
           [
             [16.7744355, 51.0331294],
             [16.7741524, 51.0329533],
@@ -1563,15 +1116,6 @@ const beaverTrail = {
             [16.7727737, 51.0323385],
             [16.772649, 51.0322959],
           ],
-        ],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { name: "Edukacyjna ścieżka rowerowa" },
-      geometry: {
-        type: "MultiLineString",
-        coordinates: [
           [
             [16.8336688, 51.1242673],
             [16.8335407, 51.124073],
@@ -1586,15 +1130,6 @@ const beaverTrail = {
             [16.8275428, 51.1194115],
             [16.8266672, 51.1188443],
           ],
-        ],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { name: "Edukacyjna ścieżka rowerowa" },
-      geometry: {
-        type: "MultiLineString",
-        coordinates: [
           [
             [16.8322953, 51.1002335],
             [16.8322855, 51.1001849],
@@ -1650,15 +1185,6 @@ const beaverTrail = {
             [16.8299298, 51.0966311],
             [16.8297527, 51.0965464],
           ],
-        ],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { name: "Edukacyjna ścieżka rowerowa" },
-      geometry: {
-        type: "MultiLineString",
-        coordinates: [
           [
             [16.7925104, 51.0865078],
             [16.7925444, 51.0864334],
@@ -1677,15 +1203,6 @@ const beaverTrail = {
             [16.7921253, 51.0834568],
             [16.792133, 51.0832808],
           ],
-        ],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { name: "Edukacyjna ścieżka rowerowa" },
-      geometry: {
-        type: "MultiLineString",
-        coordinates: [
           [
             [16.8169723, 51.1082221],
             [16.8168872, 51.108399],
@@ -1696,15 +1213,6 @@ const beaverTrail = {
             [16.8163585, 51.1090369],
             [16.8162509, 51.1091197],
           ],
-        ],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { name: "Edukacyjna ścieżka rowerowa" },
-      geometry: {
-        type: "MultiLineString",
-        coordinates: [
           [
             [16.8313798, 51.1032111],
             [16.8313867, 51.1031702],
@@ -1712,15 +1220,6 @@ const beaverTrail = {
             [16.8314226, 51.1030314],
             [16.8314371, 51.1030052],
           ],
-        ],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { name: "Edukacyjna ścieżka rowerowa" },
-      geometry: {
-        type: "MultiLineString",
-        coordinates: [
           [
             [16.7847969, 51.0336533],
             [16.78463, 51.0334261],
@@ -1728,15 +1227,6 @@ const beaverTrail = {
             [16.7841981, 51.0328686],
             [16.7839509, 51.0326025],
           ],
-        ],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { name: "Edukacyjna ścieżka rowerowa" },
-      geometry: {
-        type: "MultiLineString",
-        coordinates: [
           [
             [16.8234554, 51.076924],
             [16.8234013, 51.0769467],
@@ -1748,30 +1238,12 @@ const beaverTrail = {
             [16.8226577, 51.0768311],
             [16.8224179, 51.0767299],
           ],
-        ],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { name: "Edukacyjna ścieżka rowerowa" },
-      geometry: {
-        type: "MultiLineString",
-        coordinates: [
           [
             [16.8177595, 51.0772967],
             [16.8176611, 51.0773301],
             [16.817516, 51.0773777],
             [16.8174105, 51.0774125],
           ],
-        ],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { name: "Edukacyjna ścieżka rowerowa" },
-      geometry: {
-        type: "MultiLineString",
-        coordinates: [
           [
             [16.771387, 51.0312306],
             [16.771491, 51.0311363],
@@ -1780,44 +1252,17 @@ const beaverTrail = {
             [16.7719837, 51.0308296],
             [16.772103, 51.0308735],
           ],
-        ],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { name: "Edukacyjna ścieżka rowerowa" },
-      geometry: {
-        type: "MultiLineString",
-        coordinates: [
           [
             [16.771491, 51.0311363],
             [16.7719147, 51.0315217],
             [16.7719268, 51.0315806],
           ],
-        ],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { name: "Edukacyjna ścieżka rowerowa" },
-      geometry: {
-        type: "MultiLineString",
-        coordinates: [
           [
             [16.7745995, 51.0334051],
             [16.7745867, 51.0333623],
             [16.7745404, 51.0332603],
             [16.7744355, 51.0331294],
           ],
-        ],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { name: "Edukacyjna ścieżka rowerowa" },
-      geometry: {
-        type: "MultiLineString",
-        coordinates: [
           [
             [16.7956491, 51.058388],
             [16.7956646, 51.0586443],
@@ -1839,15 +1284,6 @@ const beaverTrail = {
             [16.7943209, 51.0619597],
             [16.7939327, 51.062376],
           ],
-        ],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { name: "Edukacyjna ścieżka rowerowa" },
-      geometry: {
-        type: "MultiLineString",
-        coordinates: [
           [
             [16.7982522, 51.0746575],
             [16.7982418, 51.0747067],
@@ -1860,15 +1296,6 @@ const beaverTrail = {
             [16.7979855, 51.0751325],
             [16.7979959, 51.0751872],
           ],
-        ],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { name: "Edukacyjna ścieżka rowerowa" },
-      geometry: {
-        type: "MultiLineString",
-        coordinates: [
           [
             [16.7982522, 51.0746575],
             [16.7982413, 51.0746076],
@@ -1878,15 +1305,6 @@ const beaverTrail = {
             [16.7979435, 51.073817],
             [16.7978819, 51.0737141],
           ],
-        ],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { name: "Edukacyjna ścieżka rowerowa" },
-      geometry: {
-        type: "MultiLineString",
-        coordinates: [
           [
             [16.7938509, 51.0753051],
             [16.7939706, 51.0752626],
@@ -1901,28 +1319,10 @@ const beaverTrail = {
             [16.7977135, 51.0751299],
             [16.7979959, 51.0751872],
           ],
-        ],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { name: "Edukacyjna ścieżka rowerowa" },
-      geometry: {
-        type: "MultiLineString",
-        coordinates: [
           [
             [16.8040436, 51.0795143],
             [16.8046827, 51.0791215],
           ],
-        ],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { name: "Edukacyjna ścieżka rowerowa" },
-      geometry: {
-        type: "MultiLineString",
-        coordinates: [
           [
             [16.8046827, 51.0791215],
             [16.8047249, 51.0789792],
@@ -1951,15 +1351,6 @@ const beaverTrail = {
             [16.8112384, 51.0774108],
             [16.8114048, 51.0774439],
           ],
-        ],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { name: "Edukacyjna ścieżka rowerowa" },
-      geometry: {
-        type: "MultiLineString",
-        coordinates: [
           [
             [16.8114048, 51.0774439],
             [16.8117254, 51.0774241],
@@ -1981,56 +1372,20 @@ const beaverTrail = {
             [16.8172522, 51.0771554],
             [16.8172873, 51.0771872],
           ],
-        ],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { name: "Edukacyjna ścieżka rowerowa" },
-      geometry: {
-        type: "MultiLineString",
-        coordinates: [
           [
             [16.8224179, 51.0767299],
             [16.8218801, 51.0764822],
             [16.821785, 51.0764465],
           ],
-        ],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { name: "Edukacyjna ścieżka rowerowa" },
-      geometry: {
-        type: "MultiLineString",
-        coordinates: [
           [
             [16.821785, 51.0764465],
             [16.8216674, 51.0764435],
             [16.8208651, 51.0764804],
           ],
-        ],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { name: "Edukacyjna ścieżka rowerowa" },
-      geometry: {
-        type: "MultiLineString",
-        coordinates: [
           [
             [16.7821342, 51.0322889],
             [16.7823401, 51.0322471],
           ],
-        ],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { name: "Edukacyjna ścieżka rowerowa" },
-      geometry: {
-        type: "MultiLineString",
-        coordinates: [
           [
             [16.7778624, 51.0322778],
             [16.7780398, 51.032304],
@@ -2045,15 +1400,6 @@ const beaverTrail = {
             [16.7791542, 51.0329328],
             [16.7795894, 51.0330254],
           ],
-        ],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { name: "Edukacyjna ścieżka rowerowa" },
-      geometry: {
-        type: "MultiLineString",
-        coordinates: [
           [
             [16.780758, 51.0711435],
             [16.7808581, 51.0708644],
@@ -2061,15 +1407,6 @@ const beaverTrail = {
             [16.7838649, 51.0606178],
             [16.7839043, 51.0603521],
           ],
-        ],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { name: "Edukacyjna ścieżka rowerowa" },
-      geometry: {
-        type: "MultiLineString",
-        coordinates: [
           [
             [16.7842589, 51.0757038],
             [16.7840618, 51.0756681],
@@ -2085,15 +1422,6 @@ const beaverTrail = {
             [16.7816738, 51.0755011],
             [16.7816144, 51.0755092],
           ],
-        ],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { name: "Edukacyjna ścieżka rowerowa" },
-      geometry: {
-        type: "MultiLineString",
-        coordinates: [
           [
             [16.8391245, 51.1229365],
             [16.838688992107702, 51.123140302865345],
@@ -2105,15 +1433,6 @@ const beaverTrail = {
             [16.833670935204747, 51.124065273069888],
             [16.8335407, 51.124073],
           ],
-        ],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { name: "Edukacyjna ścieżka rowerowa" },
-      geometry: {
-        type: "MultiLineString",
-        coordinates: [
           [
             [16.8313798, 51.103211099999982],
             [16.83077901674984, 51.103534420386346],
@@ -2128,28 +1447,10 @@ const beaverTrail = {
             [16.827961131407388, 51.103473406807737],
             [16.8276972, 51.103710899999989],
           ],
-        ],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { name: "Edukacyjna ścieżka rowerowa" },
-      geometry: {
-        type: "MultiLineString",
-        coordinates: [
           [
             [16.7758539, 51.046004799999984],
             [16.7757094, 51.0460366],
           ],
-        ],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { name: "Edukacyjna ścieżka rowerowa" },
-      geometry: {
-        type: "MultiLineString",
-        coordinates: [
           [
             [16.7971101, 51.058157299999976],
             [16.7956491, 51.058388],

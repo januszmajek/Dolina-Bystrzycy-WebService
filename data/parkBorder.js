@@ -1,11 +1,14 @@
 const parkBorder = {
   type: "FeatureCollection",
-  name: "lines",
-  crs: { type: "name", properties: { name: "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+  name: "parkBorder",
+  crs: {
+    type: "name",
+    properties: { name: "urn:ogc:def:crs:OGC:1.3:CRS84" },
+  },
   features: [
     {
       type: "Feature",
-      properties: { nazwa: "borderline" },
+      properties: { name: "borderline" },
       geometry: {
         type: "MultiLineString",
         coordinates: [
@@ -87,15 +90,6 @@ const parkBorder = {
             [16.850792335314601, 51.11986390012197],
             [16.849326028794493, 51.119882531507834],
           ],
-        ],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { nazwa: "borderline" },
-      geometry: {
-        type: "MultiLineString",
-        coordinates: [
           [
             [16.849326028794493, 51.11988253150782],
             [16.847927991606294, 51.120022266662261],
@@ -164,15 +158,6 @@ const parkBorder = {
             [16.827588183045506, 51.094718191902857],
             [16.828383669173817, 51.093554945880349],
           ],
-        ],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { nazwa: "borderline" },
-      geometry: {
-        type: "MultiLineString",
-        coordinates: [
           [
             [16.828383669173817, 51.093554945880349],
             [16.829055973681523, 51.092588348199776],
@@ -279,15 +264,6 @@ const parkBorder = {
             [16.802945180400666, 51.0569438915389],
             [16.802689912463965, 51.05659967316538],
           ],
-        ],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { nazwa: "borderline" },
-      geometry: {
-        type: "MultiLineString",
-        coordinates: [
           [
             [16.802689912463965, 51.05659967316538],
             [16.802434644527267, 51.056356200087798],
@@ -400,15 +376,6 @@ const parkBorder = {
             [16.807870383706646, 51.009007744633863],
             [16.809132024251692, 51.00803912606667],
           ],
-        ],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { nazwa: "borderline" },
-      geometry: {
-        type: "MultiLineString",
-        coordinates: [
           [
             [16.809132024251692, 51.00803912606667],
             [16.810411026822582, 51.007055921120397],
@@ -452,15 +419,6 @@ const parkBorder = {
             [16.821689832864891, 50.983634463588139],
             [16.803555051437474, 50.985162988429316],
           ],
-        ],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { nazwa: "borderline'" },
-      geometry: {
-        type: "MultiLineString",
-        coordinates: [
           [
             [16.803555051437474, 50.985162988429309],
             [16.800259806286036, 50.985175464484797],
@@ -639,15 +597,6 @@ const parkBorder = {
             [16.698125018313679, 50.95602266756665],
             [16.697552071460652, 50.955607073764945],
           ],
-        ],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { nazwa: "borderline" },
-      geometry: {
-        type: "MultiLineString",
-        coordinates: [
           [
             [16.697552071460652, 50.955607073764945],
             [16.696724428760092, 50.95538840831194],
@@ -836,15 +785,6 @@ const parkBorder = {
             [16.706038145924481, 50.980892741586828],
             [16.707143528237122, 50.980989296673933],
           ],
-        ],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { nazwa: "borderline" },
-      geometry: {
-        type: "MultiLineString",
-        coordinates: [
           [
             [16.707143528237122, 50.98098929667394],
             [16.709189353616814, 50.98170161196046],
@@ -878,15 +818,6 @@ const parkBorder = {
             [16.74785313835611, 50.994293760187482],
             [16.748226421911948, 50.994918451629012],
           ],
-        ],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { nazwa: "borderline" },
-      geometry: {
-        type: "MultiLineString",
-        coordinates: [
           [
             [16.748226421911948, 50.994918451629012],
             [16.748391361157555, 50.995095112114832],
@@ -1000,15 +931,6 @@ const parkBorder = {
             [16.774844577797921, 51.035749192138105],
             [16.775813957574716, 51.036606235911634],
           ],
-        ],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { nazwa: "borderline" },
-      geometry: {
-        type: "MultiLineString",
-        coordinates: [
           [
             [16.775813957574716, 51.036606235911627],
             [16.776456352531284, 51.037277666774756],
@@ -1156,15 +1078,6 @@ const parkBorder = {
             [16.800374713397154, 51.110278144326699],
             [16.801672524829673, 51.110319928740573],
           ],
-        ],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { nazwa: "borderline" },
-      geometry: {
-        type: "MultiLineString",
-        coordinates: [
           [
             [16.801672524829673, 51.11031992874058],
             [16.802639010935494, 51.110387147066206],
@@ -1226,15 +1139,6 @@ const parkBorder = {
             [16.832067644756446, 51.12213250224508],
             [16.832527738441552, 51.12259927573389],
           ],
-        ],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { nazwa: "borderline" },
-      geometry: {
-        type: "MultiLineString",
-        coordinates: [
           [
             [16.832527738441549, 51.122599275733883],
             [16.832704252371059, 51.122826303935987],

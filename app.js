@@ -55,7 +55,7 @@ const pBorder = L.geoJSON(parkBorder, {
     weight: 3,
   },
 });
-const pBeaver = L.geoJSON(beaverTrail, {
+const pBeaver = L.geoJSON(bike, {
   style: {
     color: "#e02525",
     dashArray: "10 10",
@@ -89,12 +89,12 @@ layerController.addTo(map);
 // show zoom controller on higher right corner of the map
 map.zoomControl.setPosition("topright");
 
-const beaverName = [beaverTrail.features[0].properties.name];
-const beaverPlace = [beaverTrail.features[0].properties.place];
-const beaverTags = [beaverTrail.features[0].properties.tags];
-const beaverCategory = [beaverTrail.features[0].properties.category];
+const beaverName = [bike.features[0].properties.name];
+const beaverPlace = [bike.features[0].properties.place];
+const beaverTags = [bike.features[0].properties.tags];
+const beaverCategory = [bike.features[0].properties.category];
 const beaverPhoto = ["style/icons/bx-trip.svg"];
-const beaverDescription = [beaverTrail.features[0].properties.description];
+const beaverDescription = [bike.features[0].properties.description];
 
 const infoNames = pointsInfo.features.map(function (prp) {
   return prp.properties.name;
@@ -691,6 +691,7 @@ const allElementsMediaListForMarkers = monumentMedia.concat(
   viewMedia,
   infoMedia
 );
+allElementsMediaListForMarkers.push([]);
 const arrMarkersAndPhotos = fromThreeToOneArray(
   pDataMarkersAndNames,
   allElementsMediaListForMarkers,
@@ -700,11 +701,7 @@ const arrMarkersAndPhotos = fromThreeToOneArray(
 arrMarkersAndPhotos.forEach(function (e) {
   e[0][0].addEventListener("click", closeNav);
   e[0][0].addEventListener("click", function () {
-    if (
-      e[2] !== undefined &&
-      e[1].length != 0 &&
-      e[2].querySelector(".pic").innerHTML === ""
-    ) {
+    if (e[1].length != 0 && e[2].querySelector(".pic").innerHTML === "") {
       for (let j = 0; j < e[1].length; j++) {
         const findDivPic = e[2].querySelectorAll(".pic")[j];
         const imgMedia = document.createElement("img");
